@@ -122,24 +122,7 @@ def display_menu():
         st.title("About Me")
         st.write("")
         display_images("Art")
-    elif choice == "Design":
-        st.title("About Me")
-        st.write("")
-
-        # Allow only .csv and .xlsx files to be uploaded
-
-        chart_data = st.file_uploader("Upload spreadsheet", type=["csv", "xlsx"])
-
-        # Check if file was uploaded
-        if chart_data:
-            # Check MIME type of the uploaded file
-            if chart_data.type == "text/csv":
-                df = pd.read_csv(uploaded_file)
-            else:
-                df = pd.read_excel(uploaded_file)
-
-            # Work with the dataframe
-            st.dataframe(df.head())
+   
 
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
@@ -148,7 +131,7 @@ def display_menu():
         st.title("Video - Clip Sam the Kid - O RECADO ")
         st.write(
             "|Projeto Video  CLIP | o RECADO - SAM the Kid")
-        st.video("https://www.google.com/search?q=you+tube+o+recado+sam+the+kid&rlz=1C5CHFA_enPT1045PT1045&oq=you+tube+o+recado+sam+the+kid&aqs=chrome..69i57j33i22i29i30.7284j0j4&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d89aade3,vid:VKem4V0A9mE")
+        st.video("SAM_THE_KID.mp4")
     elif choice == "3D":
         st.title("3D Gallery")
         st.write("Galeria de Criações 3D")
@@ -189,7 +172,7 @@ def display_menu():
         st.image("3.png")
     elif choice == "IoT":
         st.title("Projetos Dashboarding e Data Science")
-        st.write("My name is Streamlit and I love to create web applications.")
+        st.write("Criação de Dashboarding e Infografias para Data Science .")
         chart_data = pd.read_csv('Topicosbem.csv', sep=',')
         # Work with the dataframe
         st.dataframe(chart_data.head(15))
