@@ -121,7 +121,7 @@ def display_menu():
     elif choice == "Art":
         st.title("About Me")
         st.write("")
-        display_images("Art")
+       
    
 
     elif choice == "Video":
