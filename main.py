@@ -144,11 +144,11 @@ def display_menu():
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
-        st.video("FuradelsBahus.mp4")
+        st.video("https://www.youtube.com/watch?v=aT1X9w1yMwE&list=PLqUL-W6mtUu5dradixC0MJ9B46RZi6IhK&index=13")
         st.title("Video - Clip Sam the Kid - O RECADO ")
         st.write(
             "|Projeto Video  CLIP | o RECADO - SAM the Kid")
-        st.video("SAM_THE_KID.mp4")
+        st.video("https://www.google.com/search?q=you+tube+o+recado+sam+the+kid&rlz=1C5CHFA_enPT1045PT1045&oq=you+tube+o+recado+sam+the+kid&aqs=chrome..69i57j33i22i29i30.7284j0j4&sourceid=chrome&ie=UTF-8#fpstate=ive&vld=cid:d89aade3,vid:VKem4V0A9mE")
     elif choice == "3D":
         st.title("3D Gallery")
         st.write("Galeria de Criações 3D")
