@@ -159,9 +159,7 @@ def display_menu():
         col1, col2, col3 = st.columns(3)
 
         with col1:
-            st.header("Video")
-            st.video("Cutscene Final.mp4")
-            button_1 = st.button("Gosto", key="sictemic")
+            
         with col2:
             st.header("Design")
             st.image("2.png")
@@ -171,6 +169,17 @@ def display_menu():
             st.header("3D ART")
             st.image("Carrinha.jpeg")
             button_3 = st.button("Gosto", key="cutr ")
+         col1, col2, col3 = st.columns(3)
+        
+        with col1:
+            st.title("")
+        with col2:
+            
+            st.header("Video")
+            st.video("Cutscene Final.mp4")
+            button_1 = st.button("Gosto", key="sictemic")
+        with col3:
+            st.title("")
 
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
