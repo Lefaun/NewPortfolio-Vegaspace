@@ -101,6 +101,7 @@ def display_menu():
         with col2:
             st.header("3D Animation")
             st.image("image5.jpeg")
+            st.video("https://youtu.be/ZfxPMMzyeX8")
 
             button_2 = st.button("Gosto", key="asian")
         with col3:
