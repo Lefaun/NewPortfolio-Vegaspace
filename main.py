@@ -6,6 +6,8 @@ import altair as alt
 import matplotlib as plt
 import base64
 from collections import Counter
+import streamlit.components.v1 as components
+
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
 
@@ -118,9 +120,11 @@ def display_menu():
             st.markdown(pdf_display, unsafe_allow_html=True)
 
         show_pdf('CV - Paulo Monteiro - Mestrado 2022.pdf')
-    elif choice == "Art":
-        st.title("About Me")
-        st.write("")
+    elif choice == "3D Games ":
+        st.title("Exemple de Pequeno Jogo em Python e Blender")
+        st.write("Jogo 3D em UPBGE")
+
+        components.html(<link rel="stylesheet" href="https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html)
        
    
 
@@ -154,7 +158,7 @@ def display_menu():
 
         with col1:
             st.header("Video")
-            st.image("3.png")
+            st.image("Cutscene Final.mp4")
             button_1 = st.button("Gosto", key="sictemic")
         with col2:
             st.header("Design")
@@ -169,6 +173,7 @@ def display_menu():
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
         st.image("Drwaing.jpeg")
+        st.image("Paulo_Image.png")
         st.image("3.png")
     elif choice == "IoT":
         st.title("Projetos Dashboarding e Data Science")
