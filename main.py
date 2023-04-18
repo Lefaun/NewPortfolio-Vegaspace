@@ -125,7 +125,7 @@ def display_menu():
         st.title("Exemple de Pequeno Jogo em Python e Blender")
         st.write("Jogo 3D em UPBGE")
 
-        components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=800, heigth =600)
+        components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=800, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
    
