@@ -73,12 +73,13 @@ with st.sidebar:
 def display_menu():
     
     
-    choice = option_menu(None, ["Home", "About Me", "Art", "Design", "Video", "3D Games", "IoT", "Graphics"],
+    menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics"]
+    choice = st.selectbox("Select an option", menu)
+    
+    choice = option_menu(None, ["Home", "About", "Art", "Design", "Video", "3D Games", ,"3D","IoT", "Graphics"],
     icons=None,
     default_index=0, orientation="horizontal",)
     
-    menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics"]
-    choice = st.selectbox("Select an option", menu)
     
     if choice == "Home":
         st.title("Welcome to My Gallery")
