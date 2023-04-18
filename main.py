@@ -175,7 +175,7 @@ def display_menu():
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
         st.image("Drwaing.jpeg")
-        st.image("Paulo_Image.png")
+        st.image("Paulo_Image.PNG")
         st.image("3.png")
     elif choice == "IoT":
         st.title("Projetos Dashboarding e Data Science")
