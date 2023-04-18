@@ -164,7 +164,7 @@ def display_menu():
             button_1 = st.button("Gosto", key="sictemic")
         with col2:
             st.header("Design")
-            st.image("Portfolio/2.png")
+            st.image("2.png")
 
             button_2 = st.button("Gosto", key="asian")
         with col3:
