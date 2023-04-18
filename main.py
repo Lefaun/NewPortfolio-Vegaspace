@@ -58,9 +58,7 @@ def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
     # 2. horizontal menu
-menu = option_menu(None, ["Home", "About Me", "Art", "Design", "Video", "3D Games", "IoT", "Graphics"],
-    icons=None,
-    default_index=0, orientation="horizontal")
+
 
 
     # 1. as sidebar menu
@@ -75,6 +73,11 @@ with st.sidebar:
 def display_menu():
     menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics"]
     choice = st.selectbox("Select an option", menu)
+    
+    menu = option_menu(None, ["Home", "About Me", "Art", "Design", "Video", "3D Games", "IoT", "Graphics"],
+    icons=None,
+    default_index=0, orientation="horizontal")
+    
     if choice == "Home":
         st.title("Welcome to My Gallery")
         st.write("Este é um exemplo de alguns projetos de 3D / web design / Design Gráfico e Video")
