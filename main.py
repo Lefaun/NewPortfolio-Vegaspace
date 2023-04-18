@@ -169,7 +169,7 @@ def display_menu():
             st.header("3D ART")
             st.image("Carrinha.jpeg")
             button_3 = st.button("Gosto", key="cutr ")
-         col1, col2, col3 = st.columns(3)
+        col1, col2, col3 = st.columns(3)
         
         with col1:
             st.title("")
