@@ -77,6 +77,7 @@ def display_menu():
     menu = option_menu(None, ["Home", "About Me", "Art", "Design", "Video", "3D Games", "IoT", "Graphics"],
     icons=None,
     default_index=0, orientation="horizontal")
+    choice = st.multiselect(menu)
     
     if choice == "Home":
         st.title("Welcome to My Gallery")
