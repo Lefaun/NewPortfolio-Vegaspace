@@ -58,7 +58,7 @@ def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
     # 2. horizontal menu
-selected2 = option_menu(None, ["Home", "About Me", "Art", "Design", "Video", "3D Games", "IoT", "Graphics"],
+menu = option_menu(None, ["Home", "About Me", "Art", "Design", "Video", "3D Games", "IoT", "Graphics"],
     icons=None,
     default_index=0, orientation="horizontal")
 
