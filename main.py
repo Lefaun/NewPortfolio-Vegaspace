@@ -169,7 +169,7 @@ def display_menu():
             button_3 = st.button("Gosto", key="cutr ")
        
             
-        st.header("Video")
+        st.title("Video")
         st.video("Cutscene Final.mp4")
         button_1 = st.button("Gosto", key="sictemic")
 
