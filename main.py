@@ -173,7 +173,7 @@ def display_menu():
         with col2:
             
             st.header("Video")
-            st.video("Cutscene Final.mp4", width = 750)
+            st.video("Cutscene Final.mp4", width=750)
             button_1 = st.button("Gosto", key="sictemic")
         with col3:
             st.title("")
