@@ -127,6 +127,8 @@ def display_menu():
             st.markdown(pdf_display, unsafe_allow_html=True)
 
         show_pdf('CV - Paulo Monteiro - Mestrado 2022.pdf')
+        st.title("Tese de Mestrado")
+        components.iframe("https://issuu.com/lefaun83/docs/issu_da_final_copy_-_dissertac_a_o_de_vr_systems_for")
     elif choice == "3D Games":
         st.title("Exemple de Pequeno Jogo em Python e Blender")
         st.write("Jogo 3D em UPBGE")
