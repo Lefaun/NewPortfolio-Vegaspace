@@ -167,14 +167,12 @@ def display_menu():
             st.header("3D ART")
             st.image("Carrinha.jpeg")
             button_3 = st.button("Gosto", key="cutr ")
-        col1 = st.columns(1)
-        
-        with col1:
-            
-            st.header("Video")
-            st.video("Cutscene Final.mp4")
-            button_1 = st.button("Gosto", key="sictemic")
        
+            
+        st.header("Video")
+        st.video("Cutscene Final.mp4")
+        button_1 = st.button("Gosto", key="sictemic")
+
 
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
