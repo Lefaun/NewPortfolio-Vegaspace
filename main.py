@@ -140,7 +140,7 @@ def display_menu():
         components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
-   elif choice =="Art"
+    elif choice =="Art"
         video_html = f'''
         <div style ="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
     <video autoplay loop style="object-fit: cover; width: 100%; height: 100%;">
