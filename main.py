@@ -146,6 +146,7 @@ def display_menu():
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
     elif choice =="Art":
+        st.video("human.mp4", loop="true", autoplay="true")
         video_html = f'''
         
         <video controls width="650" autoplay="true" muted="true" loop="true">
@@ -158,7 +159,7 @@ def display_menu():
         st.markdown(video_html, unsafe_allow_html=True)
         mask = f'''
     <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: {mask_width/2}px;">
-        <img style="width: 100%; height: 100%; object-fit: cover;" src="{mask_image}">
+        <img style="width: 100%; height: 100%; object-fit: cover;" src="{mask}">
     </div>
 </div>
 
