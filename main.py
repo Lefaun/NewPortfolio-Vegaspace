@@ -16,6 +16,8 @@ side_bg_ext = "jpeg"
 video_file = open("human.mp4", 'rb').read()
 color_bgg ="#f0f0f0"
 opacity_bg = 0.6
+mask_image = 'untitled.png' # path to your mask image
+mask_width = 1920 # the width of your mask image
 
 
 st.markdown(
@@ -142,18 +144,21 @@ def display_menu():
        
     elif choice =="Art":
         video_html = f'''
-        <div style ="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
     <video autoplay loop style="object-fit: cover; width: 100%; height: 100%;">
         <source src="data:video/mp4;base64,{b64}" type="video/mp4">
     </video>
+    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: {mask_width/2}px;">
+        <img style="width: 100%; height: 100%; object-fit: cover;" src="{mask_image}">
+    </div>
 </div>
 
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    <h1 style="color: white; background: {color_bg}; opacity: {opacity_bg}; padding: 10px;">I´m a Human Beeing and It Rests in Me all the dream of the whole world </h1>
+    <h1 style="color: white; background: rgba(0, 0, 0, 0.5); padding: 10px;">Sua descrição de texto aqui</h1>
 </div>
 '''
-        st.markdown(video_html, unsafe_allow_html = True)
 
+st.markdown(video_html, unsafe_allow_html=True)
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
