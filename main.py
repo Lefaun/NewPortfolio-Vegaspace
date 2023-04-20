@@ -146,13 +146,15 @@ def display_menu():
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
     elif choice =="Art":
-        video_html = 
+        video_html = f'''
         
         <video controls width="1920" autoplay="true" muted="true" loop="true">
             <source 
             src="human.mp4" 
             type="video/mp4" />
         </video>
+       '''
+        st.markdown(video_html, unsafe_allow_html=True)
         video_html2 = 
         f'''
 <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
