@@ -18,9 +18,9 @@ color_bgg ="#f0f0f0"
 opacity_bg = 0.6
 mask_image = 'untitled.png' # path to your mask image
 mask_width = 1920 # the width of your mask image
-autoplay="true" -- For autoplay
-muted="true" -- For mute
-loop="true" -- For Loop
+autoplay="true" # For autoplay
+muted="true" # For mute
+loop="true" # For Loop
 
 
 st.markdown(
