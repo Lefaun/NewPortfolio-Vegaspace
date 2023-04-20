@@ -16,7 +16,7 @@ side_bg_ext = "jpeg"
 video_html = open("human.mp4", 'rb').read()
 color_bgg ="#f0f0f0"
 opacity_bg = 0.6
-mask_image = 'untitled.png' # path to your mask image
+mask = 'untitled.png' # path to your mask image
 mask_width = 1920 # the width of your mask image
 autoplay="true" # For autoplay
 muted="true" # For mute
@@ -146,7 +146,7 @@ def display_menu():
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
     elif choice =="Art":
-        video_html = f'''
+        video_html = '''
         
         <video controls width="1920" autoplay="true" muted="true" loop="true">
             <source 
@@ -162,7 +162,7 @@ def display_menu():
 </div>
 
 <div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    <h1 style="color: white; background: rgba(0, 0, 0, 0.5); padding: 10px;">Sua descrição de texto aqui</h1>
+    <h1 style="color: white; background: rgba(0, 0, 0, 0.5); padding: 10px;">I´m A Human and a Keep in Mind all The World´s Dream</h1>
 </div>
 '''
 
