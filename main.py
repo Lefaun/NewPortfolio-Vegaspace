@@ -152,8 +152,7 @@ def display_menu():
     <h1 style="color: white; background: {color_bg}; opacity: {opacity_bg}; padding: 10px;">I´m a Human Beeing and It Rests in Me all the dream of the whole world </h1>
 </div>
 '''
-
-st.markdown(video_html, unsafe_allow_html = True)
+        st.markdown(video_html, unsafe_allow_html = True)
 
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
