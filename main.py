@@ -155,12 +155,7 @@ def display_menu():
         </video>
        '''
         st.markdown(video_html, unsafe_allow_html=True)
-        video_html2 = 
-        f'''
-<div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
-    <video autoplay loop style="object-fit: cover; width: 100%; height: 100%;">
-        <source src="data:video/mp4;base64,{b64}" type="video/mp4">
-    </video>
+        mask = f'''
     <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: {mask_width/2}px;">
         <img style="width: 100%; height: 100%; object-fit: cover;" src="{mask_image}">
     </div>
@@ -171,7 +166,7 @@ def display_menu():
 </div>
 '''
 
-        st.markdown(video_html2, unsafe_allow_html=True)
+        st.markdown(mask, unsafe_allow_html=True)
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
