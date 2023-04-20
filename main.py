@@ -13,7 +13,7 @@ main_bg_ext = "jpeg"
 
 side_bg = "lightgreen.jpeg"
 side_bg_ext = "jpeg"
-video_file = open("human.mp4", 'rb').read()
+video_html = open("human.mp4", 'rb').read()
 color_bgg ="#f0f0f0"
 opacity_bg = 0.6
 mask_image = 'untitled.png' # path to your mask image
