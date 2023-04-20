@@ -13,6 +13,10 @@ main_bg_ext = "jpeg"
 
 side_bg = "lightgreen.jpeg"
 side_bg_ext = "jpeg"
+video_file = open("human.mp4"), rb.read()
+color_bgg ="#f0f0f0"
+opacity_bg = 0.6
+
 
 st.markdown(
     f"""
@@ -136,7 +140,20 @@ def display_menu():
         components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
-   
+   elif choice =="Art"
+        video_html = f'''
+        <div style ="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
+    <video autoplay loop style="object-fit: cover; width: 100%; height: 100%;">
+        <source src="data:video/mp4;base64,{b64}" type="video/mp4">
+    </video>
+</div>
+
+<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
+    <h1 style="color: white; background: {color_bg}; opacity: {opacity_bg}; padding: 10px;">I´m a Human Beeing and It Rests in Me all the dream of the whole world </h1>
+</div>
+'''
+
+st.markdown(video_html, unsafe_allow_html = True)
 
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
