@@ -18,6 +18,9 @@ color_bgg ="#f0f0f0"
 opacity_bg = 0.6
 mask_image = 'untitled.png' # path to your mask image
 mask_width = 1920 # the width of your mask image
+autoplay="true" -- For autoplay
+muted="true" -- For mute
+loop="true" -- For Loop
 
 
 st.markdown(
@@ -143,7 +146,15 @@ def display_menu():
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
     elif choice =="Art":
-        video_html = f'''
+        video_html = 
+        
+        <video controls width="1920" autoplay="true" muted="true" loop="true">
+            <source 
+            src="human.mp4" 
+            type="video/mp4" />
+        </video>
+        video_html2 = 
+        f'''
 <div style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; z-index: -1;">
     <video autoplay loop style="object-fit: cover; width: 100%; height: 100%;">
         <source src="data:video/mp4;base64,{b64}" type="video/mp4">
@@ -158,7 +169,7 @@ def display_menu():
 </div>
 '''
 
-        st.markdown(video_html, unsafe_allow_html=True)
+        st.markdown(video_html2, unsafe_allow_html=True)
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
