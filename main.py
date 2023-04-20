@@ -158,7 +158,7 @@ def display_menu():
 </div>
 '''
 
-st.markdown(video_html, unsafe_allow_html=True)
+        st.markdown(video_html, unsafe_allow_html=True)
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
