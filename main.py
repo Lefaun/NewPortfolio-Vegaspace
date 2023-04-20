@@ -146,7 +146,7 @@ def display_menu():
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
     elif choice =="Art":
-        st.video("human.mp4", width=650)
+        st.video("human.mp4")
         video_html = f'''
         
         <video controls width="650" autoplay="true" muted="true" loop="true">
