@@ -14,10 +14,10 @@ import plotly.figure_factory as ff
 import plotly.figure_factory as px
 import plotly.figure_factory as line
 from pandas.api.types import (
-is_categorical_dtype,
-is_datetime64_any_dtype,
-is_numeric_dtype,
-is_object_dtype,)
+    is_categorical_dtype,
+    is_datetime64_any_dtype,
+    is_numeric_dtype,
+    is_object_dtype,)
 from datasets import *
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
