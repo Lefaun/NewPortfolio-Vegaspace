@@ -18,8 +18,7 @@ is_categorical_dtype,
 is_datetime64_any_dtype,
 is_numeric_dtype,
 is_object_dtype,
-from datasets import filter_data, filter_dataframe
-
+from datasets import *
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
 
