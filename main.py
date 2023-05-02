@@ -7,6 +7,19 @@ import matplotlib as plt
 import base64
 from collections import Counter
 import streamlit.components.v1 as components
+import pandas as pd
+import streamlit as st
+import numpy as np
+import plotly.figure_factory as ff
+import plotly.figure_factory as px
+import plotly.figure_factory as line
+from pandas.api.types import (
+is_categorical_dtype,
+is_datetime64_any_dtype,
+is_numeric_dtype,
+is_object_dtype,
+)
+
 
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
@@ -82,7 +95,7 @@ with st.sidebar:
 def display_menu():
     
     
-    #menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics"]
+    menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics"]
     #choice = st.selectbox("Select an option", menu)
     
     choice = option_menu(None, ["Home", "About", "Art", "Design", "Video", "3D Games","3D","IoT", "Graphics"],
@@ -221,18 +234,7 @@ def display_menu():
     elif choice == "IoT":
         st.title("Projetos Dashboarding e Data Science")
         st.write("Criação de Dashboarding e Infografias para Data Science .")
-        import pandas as pd
-        import streamlit as st
-        import numpy as np
-        import plotly.figure_factory as ff
-        import plotly.figure_factory as px
-        import plotly.figure_factory as line
-        from pandas.api.types import (
-            is_categorical_dtype,
-            is_datetime64_any_dtype,
-            is_numeric_dtype,
-            is_object_dtype,
-        )
+      
 
         st.title("Esatisticas da Saúde Mental no Período de 2004 a 2020 ")
 
@@ -481,8 +483,7 @@ def display_menu():
             # Plot!
             st.plotly_chart(fig, use_container_width=True)
 
-            import streamlit as st
-            import streamlit.components.v1 as components
+            
             p = open("lda.html")
             components.html(p.read(), width=1000, height=800, )
 
