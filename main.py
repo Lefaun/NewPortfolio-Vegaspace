@@ -246,7 +246,7 @@ def display_menu():
         df = pd.read_csv(
                 "Mentalhealth3.csv"
             )
-        datasets()
+       
         
         
 
@@ -384,4 +384,5 @@ def display_menu():
         plt.axis('off')
         st.pyplot()
 display_menu()
+datasets()
 
