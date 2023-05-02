@@ -18,7 +18,7 @@ from pandas.api.types import (
     is_datetime64_any_dtype,
     is_numeric_dtype,
     is_object_dtype,)
-from datasets import *
+from datasets import (filter_data, filter_dataframe)
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
 
