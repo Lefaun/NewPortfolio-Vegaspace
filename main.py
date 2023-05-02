@@ -243,6 +243,8 @@ def display_menu():
             divídidos por Género, Faixa Étaria e Ocupação Profissional
             """
         )
+        p = open("lda.html")
+        components.html(p.read(), width=1000, height=800, )
         def filter_data(df: pd.DataFrame) ->pd.DataFrame:
             options = st.multiselect("escolha a Fatores de Risco ", options=df.columns)
             st.write('Voçê selecionou as seguintes opções', options)
@@ -407,8 +409,7 @@ def display_menu():
             st.plotly_chart(fig, use_container_width=True)
 
             
-            p = open("lda.html")
-            components.html(p.read(), width=1000, height=800, )
+           
 
             chart_data = pd.read_csv('Topicosbem.csv', sep=',')
             # Work with the dataframe
