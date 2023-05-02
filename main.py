@@ -247,7 +247,7 @@ def display_menu():
                 "Mentalhealth3.csv"
             )
        
-       st.datasets()
+        st.datasets()
         
 
 
