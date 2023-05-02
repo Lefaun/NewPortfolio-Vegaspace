@@ -19,7 +19,7 @@ is_datetime64_any_dtype,
 is_numeric_dtype,
 is_object_dtype,
 )
-
+from function import *
 
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
@@ -248,7 +248,7 @@ def display_menu():
         df = pd.read_csv(
                 "Mentalhealth3.csv"
             )
-
+        function()
         
         
 
