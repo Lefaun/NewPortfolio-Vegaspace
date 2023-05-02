@@ -245,100 +245,100 @@ def display_menu():
         )
         p = open("lda.html")
         components.html(p.read(), width=1000, height=800, )
-         df = pd.read_csv(
+        df = pd.read_csv(
                 "Mentalhealth3.csv"
             )
 
-            st.dataframe(filter_dataframe2(df))
+        st.dataframe(filter_dataframe2(df))
 
-            chart_data = pd.DataFrame(
-                np.random.randn( 22 , 5),
-                columns=['Mulheres', 'Homens', 'Ensino Superior', 'Desempregados', 'Reformados' ])
-
-
-                #column2=['25','50','75', '80', '100']
-            st.area_chart(chart_data)
-
-            # Example dataframe
-            df = pd.read_csv('Mentalhealth3.csv')
-
-            # plot
-            st.area_chart(data = df, x= "Date1",y='Total')
+        chart_data = pd.DataFrame(
+            np.random.randn( 22 , 5),
+            columns=['Mulheres', 'Homens', 'Ensino Superior', 'Desempregados', 'Reformados' ])
 
 
+            #column2=['25','50','75', '80', '100']
+        st.area_chart(chart_data)
 
-            chart_data = pd.DataFrame(
-                np.random.randn( 2 , 5),
-                {
+        # Example dataframe
+        df = pd.read_csv('Mentalhealth3.csv')
 
-                'Date1': [2004,2008,2010,2015,2022],
-                'columns':['Mulheres', 'Homens', 'Ensino Superior', 'Desempregados', 'Reformados' ] })
-
-
-                #column2=['25','50','75', '80', '100']
-            st.area_chart(chart_data)
-
-            df = pd.read_csv('Mentalhealth3.csv')
-            st.area_chart( df, x="Date1", y='Total')
-
-            df = pd.DataFrame(
-                {"Date1": [2008, 2011, 2018, 2020], "values": [0, 25, 50, 75], "values_2": [15, 25, 45, 85]}
-
-            ).set_index("Date1")
-
-            df_new = pd.DataFrame(
-                {"steps": [4, 5, 6], "Homens": [0.5, 0.3, 0.5], "Mulheres": [0.8, 0.5, 0.3]}
-            ).set_index("steps")
-
-            df_all = pd.concat([df, df_new], axis=0)
-            st.line_chart(chart_data, x=df.all,)
-            #st.line_chart(df, x=df.index, y=["Homens", "Mulheres"])
+        # plot
+        st.area_chart(data = df, x= "Date1",y='Total')
 
 
+
+        chart_data = pd.DataFrame(
+            np.random.randn( 2 , 5),
+            {
+
+            'Date1': [2004,2008,2010,2015,2022],
+            'columns':['Mulheres', 'Homens', 'Ensino Superior', 'Desempregados', 'Reformados' ] })
+
+
+            #column2=['25','50','75', '80', '100']
+        st.area_chart(chart_data)
+
+        df = pd.read_csv('Mentalhealth3.csv')
+        st.area_chart( df, x="Date1", y='Total')
+
+        df = pd.DataFrame(
+            {"Date1": [2008, 2011, 2018, 2020], "values": [0, 25, 50, 75], "values_2": [15, 25, 45, 85]}
+
+        ).set_index("Date1")
+
+        df_new = pd.DataFrame(
+            {"steps": [4, 5, 6], "Homens": [0.5, 0.3, 0.5], "Mulheres": [0.8, 0.5, 0.3]}
+        ).set_index("steps")
+
+        df_all = pd.concat([df, df_new], axis=0)
+        st.line_chart(chart_data, x=df.all,)
+        #st.line_chart(df, x=df.index, y=["Homens", "Mulheres"])
 
 
 
 
 
-            # Add histogram data
-            x1 = np.random.randn(200) - 2
-            x2 = np.random.randn(200)
-            x3 = np.random.randn(200) + 2
 
-            # Group data together
-            hist_data = [x1, x2, x3]
 
-            group_labels = ['Homens', 'Mulheres', 'Ensino superior']
+        # Add histogram data
+        x1 = np.random.randn(200) - 2
+        x2 = np.random.randn(200)
+        x3 = np.random.randn(200) + 2
 
-            # Create distplot with custom bin_size
-            fig = ff.create_distplot(
-                    hist_data, group_labels, bin_size=[2008, 2010, 2020])
+        # Group data together
+        hist_data = [x1, x2, x3]
 
-            # Plot!
-            st.plotly_chart(fig, use_container_width=True)
+        group_labels = ['Homens', 'Mulheres', 'Ensino superior']
 
-            
-           
+        # Create distplot with custom bin_size
+        fig = ff.create_distplot(
+                hist_data, group_labels, bin_size=[2008, 2010, 2020])
 
-            chart_data = pd.read_csv('Topicosbem.csv', sep=',')
-            # Work with the dataframe
-            st.dataframe(chart_data.head(15))
-            columns = (['Length', 'Height', 'Width', 'Frequency', 'Word', ])
+        # Plot!
+        st.plotly_chart(fig, use_container_width=True)
 
-            chart_data = pd.DataFrame(
-                np.random.randn(20, 5),
-                columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
-            st.bar_chart(chart_data)
 
-            chart_data = pd.DataFrame(
-                np.random.randn(20, 5),
-                columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
 
-            c = alt.Chart(chart_data).mark_circle().encode(
-                x='Length', y='Frequency', size='Height', color='Word',
-                tooltip=['Length', 'Height', 'Width', 'Frequency', 'Word'])
 
-            st.altair_chart(c, use_container_width=True)
+        chart_data = pd.read_csv('Topicosbem.csv', sep=',')
+        # Work with the dataframe
+        st.dataframe(chart_data.head(15))
+        columns = (['Length', 'Height', 'Width', 'Frequency', 'Word', ])
+
+        chart_data = pd.DataFrame(
+            np.random.randn(20, 5),
+            columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
+        st.bar_chart(chart_data)
+
+        chart_data = pd.DataFrame(
+            np.random.randn(20, 5),
+            columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
+
+        c = alt.Chart(chart_data).mark_circle().encode(
+            x='Length', y='Frequency', size='Height', color='Word',
+            tooltip=['Length', 'Height', 'Width', 'Frequency', 'Word'])
+
+        st.altair_chart(c, use_container_width=True)
         
         def filter_data(df: pd.DataFrame) ->pd.DataFrame:
             options = st.multiselect("escolha a Fatores de Risco ", options=df.columns)
