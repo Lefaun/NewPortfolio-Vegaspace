@@ -1,3 +1,5 @@
+import pandas as pd
+
 def filter_data(df: pd.DataFrame) -> pd.DataFrame:
     options = st.multiselect("escolha a Cena ", options=df.columns)
     st.write('Voçê selecionou as seguintes opções', options)
