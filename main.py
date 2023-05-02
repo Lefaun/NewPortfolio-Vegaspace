@@ -247,7 +247,7 @@ def display_menu():
                 "Mentalhealth3.csv"
             )
        
-        d= load_datasets()
+        #d= load_datasets()
         
 
 
