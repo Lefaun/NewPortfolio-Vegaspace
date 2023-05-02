@@ -395,11 +395,11 @@ def display_menu():
         group_labels = ['Homens', 'Mulheres', 'Ensino superior']
 
         # Create distplot with custom bin_size
-        fig = ff.create_distplot(
-                hist_data, group_labels, bin_size=[2008, 2010, 2020])
+        #fig = ff.create_distplot(
+                #hist_data, group_labels, bin_size=[2008, 2010, 2020])
 
         # Plot!
-        st.plotly_chart(fig, use_container_width=True)
+        #st.plotly_chart(fig, use_container_width=True)
 
 
 
