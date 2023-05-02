@@ -247,7 +247,7 @@ def display_menu():
                 "Mentalhealth3.csv"
             )
        
-        
+       st.datasets()
         
 
 
@@ -384,5 +384,5 @@ def display_menu():
         plt.axis('off')
         st.pyplot()
 display_menu()
-datasets()
+
 
