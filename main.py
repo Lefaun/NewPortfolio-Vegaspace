@@ -539,5 +539,5 @@ def display_menu():
         color=color_list, alpha=0.7)
         plt.axis('off')
         st.pyplot()
-display_menu()
+ display_menu()
 
