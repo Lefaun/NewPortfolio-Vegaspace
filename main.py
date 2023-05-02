@@ -250,8 +250,8 @@ def display_menu():
             )
 
         
-        def filter_data(df: pd.DataFrame) ->pd.DataFrame:
-            options = st.multiselect("escolha a Fatores de Risco ", options=df.columns)
+        def filter_data(df: pd.DataFrame) -> pd.DataFrame:
+            options = st.multiselect("escolha a Cena ", options=df.columns)
             st.write('Voçê selecionou as seguintes opções', options)
 
         def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
@@ -262,12 +262,12 @@ def display_menu():
             Returns:
                 pd.DataFrame: Filtered dataframe
             """
-            st.dataframe(filter_dataframe(df))
+
             modify = st.text_input(
                 "Escolha os Fatores 👇", df.columns,
-                #label_visibility=st.session_state.visibility,
-                #disabled=st.session_state.disabled,
-                #placeholder=st.session_state.placeholder,
+                # label_visibility=st.session_state.visibility,
+                # disabled=st.session_state.disabled,
+                # placeholder=st.session_state.placeholder,
 
             )
             if not modify:
