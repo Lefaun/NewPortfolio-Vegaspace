@@ -249,7 +249,7 @@ def display_menu():
                 "Mentalhealth3.csv"
             )
 
-        st.dataframe(filter_dataframe(df))
+        
         def filter_data(df: pd.DataFrame) ->pd.DataFrame:
             options = st.multiselect("escolha a Fatores de Risco ", options=df.columns)
             st.write('Voçê selecionou as seguintes opções', options)
@@ -262,7 +262,7 @@ def display_menu():
             Returns:
                 pd.DataFrame: Filtered dataframe
             """
-
+        st.dataframe(filter_dataframe(df))
             modify = st.text_input(
                 "Escolha os Fatores 👇", df.columns,
                 #label_visibility=st.session_state.visibility,
