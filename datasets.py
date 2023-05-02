@@ -79,4 +79,4 @@ def filter_dataframe(df: pd.DataFrame) -> pd.DataFrame:
             )
             if user_text_input:
                 df = df[df[column].str.contains(user_text_input)]
-return df
+                        return df
