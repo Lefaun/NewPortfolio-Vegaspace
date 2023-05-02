@@ -486,25 +486,25 @@ def display_menu():
             p = open("lda.html")
             components.html(p.read(), width=1000, height=800, )
 
-                    chart_data = pd.read_csv('Topicosbem.csv', sep=',')
-                    # Work with the dataframe
-                    st.dataframe(chart_data.head(15))
-                    columns = (['Length', 'Height', 'Width', 'Frequency', 'Word', ])
+            chart_data = pd.read_csv('Topicosbem.csv', sep=',')
+            # Work with the dataframe
+            st.dataframe(chart_data.head(15))
+            columns = (['Length', 'Height', 'Width', 'Frequency', 'Word', ])
 
-                    chart_data = pd.DataFrame(
-                        np.random.randn(20, 5),
-                        columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
-                    st.bar_chart(chart_data)
+            chart_data = pd.DataFrame(
+                np.random.randn(20, 5),
+                columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
+            st.bar_chart(chart_data)
 
-                    chart_data = pd.DataFrame(
-                        np.random.randn(20, 5),
-                        columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
+            chart_data = pd.DataFrame(
+                np.random.randn(20, 5),
+                columns=['Length', 'Height', 'Width', 'Frequency', 'Word'])
 
-                    c = alt.Chart(chart_data).mark_circle().encode(
-                        x='Length', y='Frequency', size='Height', color='Word',
-                        tooltip=['Length', 'Height', 'Width', 'Frequency', 'Word'])
+            c = alt.Chart(chart_data).mark_circle().encode(
+                x='Length', y='Frequency', size='Height', color='Word',
+                tooltip=['Length', 'Height', 'Width', 'Frequency', 'Word'])
 
-                    st.altair_chart(c, use_container_width=True)
+            st.altair_chart(c, use_container_width=True)
 
 
     elif choice == "Graphics":
