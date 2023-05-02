@@ -136,8 +136,8 @@ def display_menu():
             button_3 = st.button("Gosto", key="cutr ")
     elif choice == "About":
         st.title("About Me")
-        st.write("O meu Nome é Paulo Ricardo Monteiro, formado em 2008 em Audiovisual e Multimédia, Actualmente formei-me com o mestrado em Engenharia Infromática - área de Multimedia"
-                 "Tendo defendido a minha Tese no âmbito dos sistemas de Realidade Virtual e Realidade Aumentada para os Setores Museológicos e da Arte Digital")
+        st.write("O meu Nome é Paulo Ricardo Monteiro, formado em 2008 em Audiovisual e Multimédia, Actualmente formei-me com o mestrado em Engenharia Informática - área de Multimedia"
+                 "Tendo defendido a minha Tese com 15 valores no âmbito dos sistemas de Realidade Virtual e Realidade Aumentada para os Setores Museológicos e da Arte Digital")
         st.image('Me.jpg', width=300)
 
         def show_pdf(file_path):
