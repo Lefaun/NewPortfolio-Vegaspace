@@ -246,7 +246,7 @@ def display_menu():
         df = pd.read_csv(
                 "Mentalhealth3.csv"
             )
-        function()
+        datasets()
         
         
 
