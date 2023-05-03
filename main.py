@@ -168,20 +168,9 @@ def display_menu():
        '''
         
         st.markdown(video_html, unsafe_allow_html=True)
-        mask = f'''
-    <div style="position: absolute; bottom: 0; left: 0; width: 100%; height: {mask_width/2}px;">
-        <img style="width: 100%; height: 100%; object-fit: cover;" src="{mask}">
-    </div>
-</div>
-
-<div style="position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%);">
-    <h1 style="color: white; background: rgba(0, 0, 0, 0.5); padding: 10px;">I´m A Human and a Keep in Mind all The World´s Dream</h1>
-</div>
-'''
-
-        st.markdown(mask, unsafe_allow_html=True)
-        
         components.iframe("https://panoraven.com/en/embed/wlFbzkcGtC", width=750, height=600)
+        
+        
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
