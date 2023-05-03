@@ -180,6 +180,8 @@ def display_menu():
 '''
 
         st.markdown(mask, unsafe_allow_html=True)
+        
+        components.iframe("https://panoraven.com/en/embed/wlFbzkcGtC", width=750, height=600)
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens .")
