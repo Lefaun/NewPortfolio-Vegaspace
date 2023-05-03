@@ -157,18 +157,20 @@ def display_menu():
         st.video("https://youtu.be/ZfxPMMzyeX8")
        
     elif choice =="Art":
-        st.video("human.mp4")
-        video_html = f'''
         
-        <video controls width="650" autoplay="true" muted="true" loop="true">
-            <source 
-            src="human.mp4" 
-            type="video/mp4" />
-        </video>
-       '''
+        #video_html = f'''
         
-        st.markdown(video_html, unsafe_allow_html=True)
+        #<video controls width="650" autoplay="true" muted="true" loop="true">
+            #<source 
+            #src="human.mp4" 
+            #type="video/mp4" />
+       # </video>
+       #'''
+        
+        #st.markdown(video_html, unsafe_allow_html=True)
+        st.title(" The Faun´s Tree House")
         components.iframe("https://panoraven.com/en/embed/wlFbzkcGtC", width=750, height=600)
+        st.video("human.mp4")
         
         
     elif choice == "Video":
