@@ -361,9 +361,11 @@ def display_menu():
         with col3:
             st.header("3D Models")
             st.image("Carrinha.jpeg")
-            st.title("Animation")
-            components.iframe("https://v3d.net/j8b", width=300, height=150)
+            
             button_3 = st.button("Gosto", key="psy ")
+        st.title("Animation")
+        components.iframe("https://v3d.net/j8b", width=600, height=300
+                        )
     elif choice == 'Dashboard 1':
         st.title('Dashboard 1')
         volume = [350, 220, 170, 150, 50]
