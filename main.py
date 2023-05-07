@@ -215,7 +215,7 @@ def display_menu():
         st.video("Cutscene Final.mp4")
         button_1 = st.button("Gosto", key="sictemic")
 
-s       t.title("  - Virtual Museum - ")
+        st.title("  - Virtual Museum - ")
         st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
