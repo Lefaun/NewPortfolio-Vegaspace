@@ -175,7 +175,7 @@ def display_menu():
         
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
-        st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens Realizei alguns projetos de Audiovisual com budget enixistente ou de baixo custo, sempre com interesse em novas narrativas e algum processo experimental.")
+        st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens Realizei alguns projetos de Audiovisual com budget enixistente ou de baixo custo, sempre com interesse em novas narrativas e algum processo experimental.Nesta Reportagem com a equipe dos Fura dels Baus a bordo do navio NAUMON , assistimos a experimentos à muito testados com seres humanos num jogo sobre o erotismo o sonho a dor e a condição humana")
         st.video("https://youtu.be/4xGbR5gUoTc")
         st.title("|Projeto Video  CLIP | o RECADO - SAM the Kid- Video CLIP")        
         st.video("SAM_THE_KID.mp4")
