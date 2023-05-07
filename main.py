@@ -366,6 +366,8 @@ def display_menu():
         st.title("Animation")
         components.iframe("https://v3d.net/j8b", width=600, height=300
                         )
+        st.title(" Experiencia de Realidade Virtual - Virtual Museum ")
+        st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
     elif choice == 'Dashboard 1':
         st.title('Dashboard 1')
         volume = [350, 220, 170, 150, 50]
