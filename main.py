@@ -178,8 +178,7 @@ def display_menu():
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens Realizei alguns projetos de Audiovisual com budget enixistente ou de baixo custo, sempre com interesse em novas narrativas e algum processo experimental.")
         st.video("https://www.youtube.com/watch?v=aT1X9w1yMwE&list=PLqUL-W6mtUu5dradixC0MJ9B46RZi6IhK&index=13")
         st.title("Video - Clip Sam the Kid - O RECADO "         
-        st.write(
-            "|Projeto Video  CLIP | o RECADO - SAM the Kid")
+        st.write("|Projeto Video  CLIP | o RECADO - SAM the Kid")
         st.video("SAM_THE_KID.mp4")
         st.title(" Experiencia de Realidade Virtual - Virtual Museum ")
         st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
