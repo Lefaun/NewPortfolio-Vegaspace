@@ -179,8 +179,7 @@ def display_menu():
         st.video("https://youtu.be/hPtgSuTnPlQ")
         st.title("|Projeto Video  CLIP | o RECADO - SAM the Kid- Video CLIP")        
         st.video("SAM_THE_KID.mp4")
-        st.title(" Experiencia de Realidade Virtual - Virtual Museum ")
-        st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
+        
     elif choice == "3D":
         st.title("3D Gallery")
         st.write("Galeria de Criações 3D")
@@ -216,7 +215,8 @@ def display_menu():
         st.video("Cutscene Final.mp4")
         button_1 = st.button("Gosto", key="sictemic")
 
-
+s       t.title("  - Virtual Museum - ")
+        st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
         st.image("Drwaing.jpeg")
