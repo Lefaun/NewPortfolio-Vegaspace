@@ -176,7 +176,7 @@ def display_menu():
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
         st.write("O meu nome é Paulo Monteiro, e tenho interesse na realização de Videos e Curtas de animação e Reportagens Realizei alguns projetos de Audiovisual com budget enixistente ou de baixo custo, sempre com interesse em novas narrativas e algum processo experimental.")
-        st.video("https://www.canva.com/design/DAFiPoQ8--I/4StC-RvZj9W29Goofs2hlA/watch?utm_content=DAFiPoQ8--I&utm_campaign=share_your_design&utm_medium=link&utm_source=shareyourdesignpanel")
+        st.video("https://youtu.be/hPtgSuTnPlQ")
         st.title("|Projeto Video  CLIP | o RECADO - SAM the Kid- Video CLIP")        
         st.video("SAM_THE_KID.mp4")
         st.title(" Experiencia de Realidade Virtual - Virtual Museum ")
