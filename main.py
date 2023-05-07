@@ -172,7 +172,7 @@ def display_menu():
         components.iframe("https://panoraven.com/en/embed/wlFbzkcGtC", width=750, height=600)
        
         st.title(" The Faun´s Tree House - 3D")
-        components.iframe("https://panoraven.com/en/embed/zXZLSFbLwI")
+        components.iframe("https://panoraven.com/en/embed/zXZLSFbLwI",  width=750, height=600)
         st.video("human.mp4")
         
     elif choice == "Video":
