@@ -168,10 +168,12 @@ def display_menu():
        #'''
         
         #st.markdown(video_html, unsafe_allow_html=True)
-        st.title(" The Faun´s Tree House")
+        st.title(" The Faun´s Tree House - 2D")
         components.iframe("https://panoraven.com/en/embed/wlFbzkcGtC", width=750, height=600)
+       
+        st.title(" The Faun´s Tree House - 3D")
+        components.iframe("https://panoraven.com/en/embed/zXZLSFbLwI")
         st.video("human.mp4")
-        
         
     elif choice == "Video":
         st.title("Video - Reportagem Fura Dels Bhaus")
