@@ -424,9 +424,15 @@ def display_menu():
             # st.write(f'{label}:{prob:2%}')
             else:
                 st.write("A imagem n é valida")
+            with open('results.csv', 'a') as f:
+            with csv.DictWriter(f, fieldnames = [ "Label", "Probabilidades"]):
+                writer.writeheader()
+            for r in results:
+            writer.writerow(r)
             # for label, prob in decoded_preds:
+            chart_data = pd.read_csv('results.csv', sep=',')
 
-            c = alt.Chart(decoded_preds).mark_circle().encode(x='label', y='prob', size='prob', color='label',
+            c = alt.Chart(chart_data).mark_circle().encode(x='label', y='prob', size='prob', color='label',
             tooltip=['label', 'prob'])
 
             st.altair_chart(c, use_container_width=True)
