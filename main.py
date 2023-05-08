@@ -426,7 +426,7 @@ def display_menu():
             else:
                 st.write("A imagem n é valida")
         with open('results.csv', 'a') as f:
-            with csv.DictWriter(f, fieldname = [ "Label", "Probabilidades"]):
+            with csv.DictWriter(f, fieldnames = [ "Label", "Probabilidades"])
                 writer.writeheader()
             for r in results:
                 writer.writerow(r)
