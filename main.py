@@ -426,8 +426,7 @@ def display_menu():
                 st.write("A imagem n é valida")
             # for label, prob in decoded_preds:
 
-            squarify.plot(sizes=prob, label=label,
-                          color=color_list, alpha=0.7)
+            squarify.plot(sizes=prob, label=label,color=color_list, alpha=0.7)
             plt.axis('off')
             st.pyplot()
 display_menu()
