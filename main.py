@@ -388,11 +388,11 @@ def display_menu():
             # uploader de imagem
             st.header('Upload da imagem')
             uploaded_file = st.file_uploader("Escolha uma imagem...", type=["jpg", "jpeg", "png", "csv", 'GIF'])
-
+            
         with col2:
             st.header('Imagem de exemplo')
             st.image(uploaded_file)
-
+        st.subheader("O Erro Apresentado é de TESTES - Podem continuar Fazendo o UPload")
         if uploaded_file is not None:
             # carregando a imagem
             img = image.load_img(uploaded_file, target_size=(224, 224))
