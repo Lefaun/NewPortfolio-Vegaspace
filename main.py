@@ -375,7 +375,7 @@ def display_menu():
         st.title(" Experiencia de Realidade Virtual - Virtual Museum ")
         st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
     elif choice == 'IMAGE - Classifier APP':
-            if selected == 'Image Classifier APP':
+         
         model = ResNet50V2(weights='imagenet')
 
         # título da página
