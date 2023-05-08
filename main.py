@@ -428,7 +428,7 @@ def display_menu():
         with open('results.csv', 'a') as f:
             with csv.DictWriter(f, fieldnames = [ "Label", "Probabilidades"])
                 writer.writeheader()
-            for r in results:
+                for r in results:
                 writer.writerow(r)
             # for label, prob in decoded_preds:
             chart_data = pd.read_csv('results.csv', sep=',')
