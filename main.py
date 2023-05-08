@@ -430,7 +430,7 @@ def display_menu():
             # st.write('%s (%.2f%%)' % (label, prob * 100))
             # label,_,prob = decoded_preds[1]
             # st.write(f'{label}:{prob:2%}')
-            else:
+           else:
                 st.write("A imagem n é valida")
         
 
