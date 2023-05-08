@@ -426,7 +426,7 @@ def display_menu():
                 st.write("A imagem n é valida")
             # for label, prob in decoded_preds:
 
-            c = alt.Chart(chart_data).mark_circle().encode(x='label', y='prob', size='prob', color='label',
+            c = alt.Chart(decoded_preds).mark_circle().encode(x='label', y='prob', size='prob', color='label',
             tooltip=['label', 'prob'])
 
             st.altair_chart(c, use_container_width=True)
