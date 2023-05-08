@@ -19,6 +19,10 @@ from pandas.api.types import (
     is_numeric_dtype,
     is_object_dtype,)
 from datasets import (filter_data, filter_dataframe)
+from tensorflow.keras.preprocessing import image
+from tensorflow.keras.applications.resnet_v2 import ResNet50V2, preprocess_input, decode_predictions
+import numpy as np
+import pandas as pd
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
 
@@ -93,10 +97,10 @@ with st.sidebar:
 def display_menu():
     
     
-    menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics"]
+    menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics", "IMAGE - Classifier APP"]
     #choice = st.selectbox("Select an option", menu)
     
-    choice = option_menu(None, ["Home", "About", "Art", "Design", "Video", "3D Games","3D","IoT", "Graphics"],
+    choice = option_menu(None, ["Home", "About", "Art", "Design", "Video", "3D Games","3D","IoT", "Graphics", "IMAGE - Classifier APP"],
     icons=None,
     default_index=0, orientation="horizontal",)
     
@@ -370,18 +374,60 @@ def display_menu():
                         )
         st.title(" Experiencia de Realidade Virtual - Virtual Museum ")
         st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
-    elif choice == 'Dashboard 1':
-        st.title('Dashboard 1')
-        volume = [350, 220, 170, 150, 50]
-        labels = ['Liquid\n volume: 350k', 'Savoury\n volume: 220k',
-        'Sugar\n volume: 170k', 'Frozen\n volume: 150k',
-        'Non-food\n volume: 50k']
-        color_list = ['#0f7216', '#b2790c', '#ffe9a3',
-        '#f9d4d4', '#d35158', '#ea3033']
+    elif choice == 'IMAGE - Classifier APP':
+            if selected == 'Image Classifier APP':
+        model = ResNet50V2(weights='imagenet')
 
-        plt.rc('font', size=14)
-        squarify.plot(sizes=volume, label=labels,
-        color=color_list, alpha=0.7)
+        # título da página
+        st.title('Detecção e classificação de imagens')
+
+        # layout da página
+        col1, col2 = st.columns(2)
+        with col1:
+            # uploader de imagem
+            st.header('Upload da imagem')
+            uploaded_file = st.file_uploader("Escolha uma imagem...", type=["jpg", "jpeg", "png", "csv"])
+
+        with col2:
+            st.header('Imagem de exemplo')
+            st.image(uploaded_file)
+
+        if uploaded_file is not None:
+            # carregando a imagem
+            img = image.load_img(uploaded_file, target_size=(224, 224))
+
+            # exibindo a imagem
+            st.image(img, caption='Imagem carregada', use_column_width=True)
+
+            # pré-processamento da imagem
+            x = image.img_to_array(img)
+            x = np.expand_dims(x, axis=0)
+            x = preprocess_input(x)
+
+            # passando a imagem pelo modelo para realizar a classificação
+            preds = model.predict(x)
+
+            # decodificando as previsões
+            decoded_preds = decode_predictions(preds, top=3)[0]
+
+            # exibindo as previsões
+            if len(decoded_preds) > 0:
+                st.subheader("Previsões:")
+                for result in decoded_preds:
+                    label = result[1]
+                    prob = result[2]
+                    st.subheader(f'{label} : {prob * 100} %')
+            # if len(decoded_preds) >=2:
+            #  label,_,prob = decoded_preds[0]
+            # st.write('%s (%.2f%%)' % (label, prob * 100))
+            # label,_,prob = decoded_preds[1]
+            # st.write(f'{label}:{prob:2%}')
+            else:
+                st.write("A imagem n é valida")
+            # for label, prob in decoded_preds:
+
+        squarify.plot(sizes=prob, label=labels,
+                      color=color_list, alpha=0.7)
         plt.axis('off')
         st.pyplot()
 display_menu()
