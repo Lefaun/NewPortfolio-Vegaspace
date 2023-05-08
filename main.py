@@ -441,5 +441,5 @@ def display_menu():
             st.altair_chart(c, use_container_width=True)
         
         
-
+display_menu()
 
