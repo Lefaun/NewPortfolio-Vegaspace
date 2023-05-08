@@ -418,6 +418,13 @@ def display_menu():
                     label = result[1]
                     prob = result[2]
                     st.subheader(f'{label} : {prob * 100} %')
+                with open('results.csv', 'a') as f:
+                    with csv.DictWriter(f, fieldnames = [ "Label", "Probabilidades"]):
+                    writer.writeheader()
+                for r in results:
+                    writer.writerow(r)
+            # for label, prob in decoded_preds:
+            chart_data = pd.read_csv('results.csv', sep=',')
             # if len(decoded_preds) >=2:
             #  label,_,prob = decoded_preds[0]
             # st.write('%s (%.2f%%)' % (label, prob * 100))
@@ -425,13 +432,7 @@ def display_menu():
             # st.write(f'{label}:{prob:2%}')
             else:
                 st.write("A imagem n é valida")
-        with open('results.csv', 'a') as f:
-            with csv.DictWriter(f, fieldnames = [ "Label", "Probabilidades"]):
-                writer.writeheader()
-                for r in results:
-                    writer.writerow(r)
-            # for label, prob in decoded_preds:
-            chart_data = pd.read_csv('results.csv', sep=',')
+        
 
             c = alt.Chart(chart_data).mark_circle().encode(x='label', y='prob', size='prob', color='label',
             tooltip=['label', 'prob'])
@@ -439,6 +440,5 @@ def display_menu():
             st.altair_chart(c, use_container_width=True)
         
         
-display_menu()
 
 
