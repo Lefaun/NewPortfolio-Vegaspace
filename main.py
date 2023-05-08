@@ -423,6 +423,8 @@ def display_menu():
                         writer.writeheader()
                 for r in results:
                     writer.writerow(r)
+            elif:
+                st.write("A imagem n é valida")
             # for label, prob in decoded_preds:
             chart_data = pd.read_csv('results.csv', sep=',')
             # if len(decoded_preds) >=2:
@@ -430,8 +432,7 @@ def display_menu():
             # st.write('%s (%.2f%%)' % (label, prob * 100))
             # label,_,prob = decoded_preds[1]
             # st.write(f'{label}:{prob:2%}')
-            elif:
-                st.write("A imagem n é valida")
+            
         
 
             c = alt.Chart(chart_data).mark_circle().encode(x='label', y='prob', size='prob', color='label',
