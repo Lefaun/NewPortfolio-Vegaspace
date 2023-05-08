@@ -23,6 +23,7 @@ from tensorflow.keras.preprocessing import image
 from tensorflow.keras.applications.resnet_v2 import ResNet50V2, preprocess_input, decode_predictions
 import numpy as np
 import pandas as pd
+import csv
 main_bg = "lightgreen.jpeg"
 main_bg_ext = "jpeg"
 
