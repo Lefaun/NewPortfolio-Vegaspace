@@ -423,7 +423,7 @@ def display_menu():
                         writer.writeheader()
                 for r in results:
                     writer.writerow(r)
-            elif:
+            else:
                 st.write("A imagem n é valida")
             # for label, prob in decoded_preds:
             chart_data = pd.read_csv('results.csv', sep=',')
