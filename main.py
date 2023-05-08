@@ -387,7 +387,7 @@ def display_menu():
         with col1:
             # uploader de imagem
             st.header('Upload da imagem')
-            uploaded_file = st.file_uploader("Escolha uma imagem...", type=["jpg", "jpeg", "png", "csv"])
+            uploaded_file = st.file_uploader("Escolha uma imagem...", type=["jpg", "jpeg", "png", "csv", 'GIF'])
 
         with col2:
             st.header('Imagem de exemplo')
