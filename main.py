@@ -84,18 +84,6 @@ def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
     # 2. horizontal menu
-def send_mail():
-    try:
-        server = smtolib.SMTP('smtp.gmail.com',587)
-        server.ehlo()
-        server.starttls()
-        username = 'vegaspace@gmail.com'
-        password = 'Raspbery38#'
-        server.login(username, password)
-        to_email = 'vegaspace@gmail.com'
-        server.sendmail(username, to_email, email, emailsubject, emailmessage)
-        server.close()
-        st.success('e-mail enviado com sucesso'
 
 
     # 1. as sidebar menu
