@@ -97,7 +97,7 @@ with st.sidebar:
 
     if selected == 'Contacte Me':
         
-        email_form = st.form(key='my_email_form', clear_on_submit=False, on_submit= send_mail())
+        email_form = st.form(key='my_email_form', clear_on_submit=False)
         email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
         with st.expander("Formulário de Contacto"):
             emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
@@ -105,7 +105,8 @@ with st.sidebar:
             email_form.form_submit_button(label=' Enviar ')
 
             if email_form.form_submit_button:
-                    st.subheader('  Mensagem enviada com Sucesso!') 
+                send_mail()
+                st.subheader('  Mensagem enviada com Sucesso!') 
                     
             # Create the responsive menu
 
