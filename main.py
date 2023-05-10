@@ -455,7 +455,7 @@ def display_menu():
 
             st.altair_chart(c, use_container_width=True)
         
-display_menu() 
+
    
 
 def send_mail():
@@ -470,5 +470,4 @@ def send_mail():
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
         st.success('e-mail enviado com sucesso')
-
-
+display_menu() 
