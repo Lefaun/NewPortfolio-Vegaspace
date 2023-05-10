@@ -39,18 +39,7 @@ autoplay="true" # For autoplay
 muted="true" # For mute
 loop="true" # For Loop
 
-def send_mail():
-    try:
-        server = smtolib.SMTP('smtp.gmail.com',587)
-        server.ehlo()
-        server.starttls()
-        username = 'vegaspace@gmail.com'
-        password = ''
-        server.login(username, password)
-        to_email = 'vegaspace@gmail.com'
-        server.sendmail(username, to_email, email, emailsubject, emailmessage)
-        server.close()
-        st.success('e-mail enviado com sucesso'
+
 #st.markdown(
    # f"""
     #<style>
@@ -104,6 +93,19 @@ with st.sidebar:
              ,)
     selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
                         #icons=['house', 'gear'],
+    def send_mail():
+    try:
+        server = smtolib.SMTP('smtp.gmail.com',587)
+        server.ehlo()
+        server.starttls()
+        username = 'vegaspace@gmail.com'
+        password = ''
+        server.login(username, password)
+        to_email = 'vegaspace@gmail.com'
+        server.sendmail(username, to_email, email, emailsubject, emailmessage)
+        server.close()
+        st.success('e-mail enviado com sucesso'
+                   
     if selected == 'Contacte Me':
         with st.expander("Formulário de Contacto"):
             email_form = st.form(key='my_email_form', clear_on_submit=False)
