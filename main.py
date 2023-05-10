@@ -106,8 +106,8 @@ with st.sidebar:
             submit_e_button = email_form.form_submit_button(label='Enviar', on_click= send_mail())
 
             if submit_e_button:
-                    #send_mail()
-                    st.subheader('  Mensagem enviada com Sucesso!')                             
+                    st.subheader('  Mensagem enviada com Sucesso!') 
+                    send_mail()
             # Create the responsive menu
 
 def display_menu():
