@@ -469,4 +469,5 @@ def send_mail():
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
         st.success('e-mail enviado com sucesso')
-    display_menu()      
+        display_menu() 
+        send_mail()
