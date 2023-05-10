@@ -90,12 +90,13 @@ def main():
 with st.sidebar:
     st.image('Me.jpg', width=300
              ,)
-    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Design 1', 'Dashboard2']),menu_icon="cast", default_index=1, )
+    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contact Me']),menu_icon="cast", default_index=1, )
                         #icons=['house', 'gear'],
     if selected == 'Contacte Me':
+        with st.expander("Formulário de Contacto"):
         email_form = st.form(key='my_email_form', clear_on_submit=False)
         email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
-        with st.expander("See explanation"):
+       
             emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
             emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
 
