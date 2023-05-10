@@ -467,4 +467,3 @@ def send_mail():
         to_email = 'vegaspace@gmail.com'
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
-        st.success('e-mail enviado com sucesso')
