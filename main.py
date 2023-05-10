@@ -457,4 +457,17 @@ def display_menu():
         
         
 display_menu()
+def send_mail():
+    try:
+        server = smtolib.SMTP('smtp.gmail.com',587)
+        server.ehlo()
+        server.starttls()
+        username = 'vegaspace@gmail.com'
+        password = 'Raspbery38#'
+        server.login(username, password)
+        to_email = 'vegaspace@gmail.com'
+        server.sendmail(username, to_email, email, emailsubject, emailmessage)
+        server.close()
+        st.success('e-mail enviado com sucesso'
+
 
