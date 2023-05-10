@@ -456,7 +456,7 @@ def display_menu():
             st.altair_chart(c, use_container_width=True)
         
         
-display_menu()
+
 def send_mail():
     try:
         server = smtolib.SMTP('smtp.gmail.com',587)
@@ -469,4 +469,4 @@ def send_mail():
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
         st.success('e-mail enviado com sucesso')
-        send_email()
+ display_menu()      
