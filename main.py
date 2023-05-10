@@ -85,15 +85,7 @@ def main():
 
     # 2. horizontal menu
 
-
-
-    # 1. as sidebar menu
-with st.sidebar:
-    st.image('Me.jpg', width=300
-             ,)
-    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
-                        #icons=['house', 'gear'],
-    def send_mail():
+def send_mail():
         try:
             server = smtolib.SMTP('smtp.gmail.com',587)
             server.ehlo()
@@ -106,6 +98,14 @@ with st.sidebar:
             server.close()
             st.success('e-mail enviado com sucesso'
 
+    # 1. as sidebar menu
+with st.sidebar:
+    st.image('Me.jpg', width=300
+             ,)
+    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
+    
+              #icons=['house', 'gear'],
+    
     if selected == 'Contacte Me':
         with st.expander("Formulário de Contacto"):
             email_form = st.form(key='my_email_form', clear_on_submit=False)
