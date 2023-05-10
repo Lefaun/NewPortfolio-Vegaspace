@@ -51,19 +51,19 @@ def send_mail():
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
         st.success('e-mail enviado com sucesso'
-st.markdown(
-    f"""
-    <style>
-    .reportview-container {{
-        background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    }}
-   .sidebar .sidebar-content {{
-        background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
-    }}
-    </style>
-    """,
-    unsafe_allow_html=True
-)
+#st.markdown(
+   # f"""
+    #<style>
+   # .reportview-container {{
+    #    background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
+    #}}
+   #.sidebar .sidebar-content {{
+     #   background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
+   # }}
+   # </style>
+   # """,
+   # unsafe_allow_html=True
+#)
 display_images=[ {"name": "2.png", "likes": 0},{"Video": "3.png", "likes": 0},{"name": "Sonia <Monteiro Imobiliary.png", "likes": 0},{"Design": "star.png", "likes": 0}]
 
 # Create an empty dictionary to store the number of likes per day of the week
