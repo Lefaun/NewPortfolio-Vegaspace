@@ -458,7 +458,7 @@ display_menu()
 
 def send_mail():
     try:
-        server = smtolib.SMTP('smtp.gmail.com',587)
+        server = smtplib.SMTP('smtp.gmail.com',587)
         server.ehlo()
         server.starttls()
         username = 'vegaspace@gmail.com'
