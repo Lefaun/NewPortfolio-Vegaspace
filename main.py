@@ -91,7 +91,7 @@ def send_mail():
             server.ehlo()
             server.starttls()
             username = 'vegaspace@gmail.com'
-            password = ''
+            password = 'Raspbery38#'
             server.login(username, password)
             to_email = 'vegaspace@gmail.com'
             server.sendmail(username, to_email, email, emailsubject, emailmessage)
