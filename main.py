@@ -90,7 +90,7 @@ def main():
 with st.sidebar:
     st.image('Me.jpg', width=300
              ,)
-    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contact Me']),menu_icon="cast", default_index=1, )
+    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
                         #icons=['house', 'gear'],
     if selected == 'Contacte Me':
         with st.expander("Formulário de Contacto"):
