@@ -101,26 +101,26 @@ def send_mail():
     # 1. as sidebar menu
 with st.sidebar:
    
- st.image('Me.jpg', width=300,)
+    st.image('Me.jpg', width=300,)
 
- selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
+    selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
 
-          #icons=['house', 'gear'],
+              #icons=['house', 'gear'],
 
-if selected == 'Contacte Me':
-    with st.expander("Formulário de Contacto"):
-        email_form = st.form(key='my_email_form', clear_on_submit=False)
-        email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
+    if selected == 'Contacte Me':
+        with st.expander("Formulário de Contacto"):
+            email_form = st.form(key='my_email_form', clear_on_submit=False)
+            email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
 
-        emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
-        emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
+            emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
+            emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
 
-        submit_e_button = email_form.form_submit_button(label='Enviar' on_click = send_mail())
+            submit_e_button = email_form.form_submit_button(label='Enviar' on_click = send_mail())
 
-        if submit_e_button:
-                send_mail()
-                st.subheader('  Mensagem enviada com Sucesso!')                             
-        # Create the responsive menu
+            if submit_e_button:
+                    send_mail()
+                    st.subheader('  Mensagem enviada com Sucesso!')                             
+            # Create the responsive menu
 
 def display_menu():
     
