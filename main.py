@@ -84,7 +84,19 @@ def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
     # 2. horizontal menu
-
+def send_mail():
+    try:
+        server = smtplib.SMTP('smtp.gmail.com',587)
+        server.ehlo()
+        server.starttls()
+        username = 'vegaspace@gmail.com'
+        password = 'Raspbery38#'
+        server.login(username, password)
+        to_email = 'vegaspace@gmail.com'
+        server.sendmail(username, to_email, email, emailsubject, emailmessage)
+        server.close()
+    except Exception as e:
+        st.error(f' Ocorreu um Erro ao enviar o e-mail, Desculpe: {e}')
 
     # 1. as sidebar menu
 with st.sidebar:
@@ -105,7 +117,7 @@ with st.sidebar:
             
             if email_form.form_submit_button(label=' Enviar '):
 
-                send_mail(email, emailsubject,emailmessage )
+                send_mail(email,to_email, emailsubject,emailmessage )
                 st.subheader('  Mensagem enviada com Sucesso!') 
                     
             # Create the responsive menu
@@ -456,16 +468,4 @@ def display_menu():
             st.altair_chart(c, use_container_width=True)
 display_menu()   
 
-def send_mail():
-    try:
-        server = smtplib.SMTP('smtp.gmail.com',587)
-        server.ehlo()
-        server.starttls()
-        username = 'vegaspace@gmail.com'
-        password = 'Raspbery38#'
-        server.login(username, password)
-        to_email = 'vegaspace@gmail.com'
-        server.sendmail(username, to_email, email, emailsubject, emailmessage)
-        server.close()
-    except Exception as e:
-        st.error(f' Ocorreu um Erro ao enviar o e-mail, Desculpe: {e}')
+
