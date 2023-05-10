@@ -94,16 +94,16 @@ with st.sidebar:
                         #icons=['house', 'gear'],
     if selected == 'Contacte Me':
         with st.expander("Formulário de Contacto"):
-        email_form = st.form(key='my_email_form', clear_on_submit=False)
-        email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
-       
-            emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
-            emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
+            email_form = st.form(key='my_email_form', clear_on_submit=False)
+            email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
 
-            submit_e_button = email_form.form_submit_button(label='Enviar' )
+                emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
+                emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
 
-        if submit_e_button:
-            st.subheader('  Mensagem enviada com Sucesso!')
+                submit_e_button = email_form.form_submit_button(label='Enviar' )
+
+            if submit_e_button:
+                st.subheader('  Mensagem enviada com Sucesso!')
 # Create the responsive menu
 
 def display_menu():
