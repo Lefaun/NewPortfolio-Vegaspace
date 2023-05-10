@@ -9,6 +9,7 @@ from collections import Counter
 import streamlit.components.v1 as components
 import pandas as pd
 import streamlit as st
+import smtplib
 import numpy as np
 import plotly.figure_factory as ff
 import plotly.figure_factory as px
@@ -38,7 +39,18 @@ autoplay="true" # For autoplay
 muted="true" # For mute
 loop="true" # For Loop
 
-
+def send_mail():
+    try:
+        server = smtolib.SMTP('smtp.gmail.com',587)
+        server.ehlo()
+        server.starttls()
+        username = 'vegaspace@gmail.com'
+        password = ''
+        server.login(username, password)
+        to_email = 'vegaspace@gmail.com'
+        server.sendmail(username, to_email, email, emailsubject, emailmessage)
+        server.close()
+        st.success('e-mail enviado com sucesso'
 st.markdown(
     f"""
     <style>
@@ -100,10 +112,11 @@ with st.sidebar:
             emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
             emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
 
-            submit_e_button = email_form.form_submit_button(label='Enviar' )
+            submit_e_button = email_form.form_submit_button(label='Enviar' on_click = send_mail())
 
             if submit_e_button:
-                st.subheader('  Mensagem enviada com Sucesso!')
+                    send_mail()
+                    st.subheader('  Mensagem enviada com Sucesso!')
 # Create the responsive menu
 
 def display_menu():
