@@ -467,3 +467,5 @@ def send_mail():
         to_email = 'vegaspace@gmail.com'
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
+    except Exception as e:
+        st.error(f' Ocorreu um Erro ao enviar o e-mail, Desculpe: {e}')
