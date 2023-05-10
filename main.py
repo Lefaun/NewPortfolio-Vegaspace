@@ -102,7 +102,7 @@ with st.sidebar:
         with st.expander("Formulário de Contacto"):
             emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
             emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
-            email_form.form_submit_button()(label=' Enviar ')
+            email_form.form_submit_button(label=' Enviar ')
 
             if email_form.form_submit_button():
                 send_mail()
