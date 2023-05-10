@@ -85,21 +85,22 @@ def main():
 
     # 2. horizontal menu
 
-def send_mail():
-        try:
-            server = smtolib.SMTP('smtp.gmail.com',587)
-            server.ehlo()
-            server.starttls()
-            username = 'vegaspace@gmail.com'
-            password = 'Raspbery38#'
-            server.login(username, password)
-            to_email = 'vegaspace@gmail.com'
-            server.sendmail(username, to_email, email, emailsubject, emailmessage)
-            server.close()
-            st.success('e-mail enviado com sucesso'
+
 
     # 1. as sidebar menu
         with st.sidebar:
+            def send_mail():
+                try:
+                    server = smtolib.SMTP('smtp.gmail.com',587)
+                    server.ehlo()
+                    server.starttls()
+                    username = 'vegaspace@gmail.com'
+                    password = 'Raspbery38#'
+                    server.login(username, password)
+                    to_email = 'vegaspace@gmail.com'
+                    server.sendmail(username, to_email, email, emailsubject, emailmessage)
+                    server.close()
+                    st.success('e-mail enviado com sucesso'
             st.image('Me.jpg', width=300
                      ,)
             selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
