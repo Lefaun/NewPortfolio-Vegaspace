@@ -99,7 +99,7 @@ def send_mail():
             st.success('e-mail enviado com sucesso'
 
     # 1. as sidebar menu
-with st.sidebar:
+st.sidebar:
     st.image('Me.jpg', width=300
              ,)
     selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
