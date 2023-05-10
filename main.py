@@ -469,5 +469,3 @@ def send_mail():
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
         st.success('e-mail enviado com sucesso'
-
-
