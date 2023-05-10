@@ -101,7 +101,7 @@ with st.sidebar:
             server.sendmail(username, to_email, email, emailsubject, emailmessage)
             server.close()
             st.success('e-mail enviado com sucesso'
-            st.image('Me.jpg', width=300,)
+     st.image('Me.jpg', width=300,)
     
      selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
 
