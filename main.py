@@ -89,8 +89,8 @@ def send_mail():
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.ehlo()
         server.starttls()
-        username = 'vegaspace@gmail.com'
-        password = ''
+        username = 'mailefaun@gmail.com'
+        password = 'LefaunFriend32#'
         server.login(username, password)
         to_email = 'vegaspace@gmail.com'
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
