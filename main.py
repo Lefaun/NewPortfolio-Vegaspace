@@ -84,7 +84,7 @@ def main():
     st.set_page_config(page_title="O MEU PORTEFOLIO", page_icon=":guardsman:", layout="centered")
 
     # 2. horizontal menu
-def send_mail():
+def send_mail(email, subject, message):
     try:
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.ehlo()
@@ -93,7 +93,8 @@ def send_mail():
         password = 'kmfnhlaiasjvxvyw'
         server.login(username, password)
         to_email = 'maillefaun@gmail.com'
-        server.sendmail(username, to_email, email, subject, message)
+        server.sendmail(username, to_email, mensagem.encode('uft-8)
+        mensagem = f'Subject:{subject}\n\n De: {email}\n\n{message}'
         server.close()
     except Exception as e:
         st.error(f' Ocorreu um Erro ao enviar o e-mail, Desculpe: {e}')
@@ -117,7 +118,7 @@ with st.sidebar:
             
             if email_form.form_submit_button(label=' Enviar '):
 
-                send_mail()
+                send_mail(email, subject, message)
                 st.subheader('  Mensagem enviada com Sucesso!') 
                     
             # Create the responsive menu
