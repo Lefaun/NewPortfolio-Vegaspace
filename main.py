@@ -89,10 +89,10 @@ def send_mail():
         server = smtplib.SMTP('smtp.gmail.com',587)
         server.ehlo()
         server.starttls()
-        username = 'mailefaun@gmail.com'
-        password = 'LeFaunFriend32#'
+        username = 'maillefaun@gmail.com'
+        password = 'Lefaun12345'
         server.login(username, password)
-        to_email = 'mailefaun@gmail.com'
+        to_email = 'maillefaun@gmail.com'
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
     except Exception as e:
