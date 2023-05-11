@@ -94,7 +94,7 @@ def send_mail(email, subject, message):
         server.login(username, password)
         to_email = 'maillefaun@gmail.com'
         server.sendmail(username, to_email, mensagem.encode('uft-8'))
-        mensagem = f'Subject:{subject}\n\n De: {email}\n\n{message}'
+        
         server.close()
     except Exception as e:
         st.error(f' Ocorreu um Erro ao enviar o e-mail, Desculpe: {e}')
@@ -117,7 +117,7 @@ with st.sidebar:
             message = email_form.text_area (label = ' Escreva a sua Mensagem ')
             
             if email_form.form_submit_button(label=' Enviar '):
-
+                mensagem = f'Subject:{subject}\n\n De: {email}\n\n{message}'
                 send_mail(email, subject, message)
                 st.subheader('  Mensagem enviada com Sucesso!') 
                     
