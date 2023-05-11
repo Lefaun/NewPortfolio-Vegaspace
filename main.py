@@ -93,9 +93,9 @@ def send_mail():
         password = 'kmfnhlaiasjvxvyw'
         server.login(username, password)
         to_email = 'maillefaun@gmail.com'
-        subject = str([])
-        email = str([])
-        message = str([])
+        subject = str()
+        email = str()
+        message = str()
         server.sendmail(username, to_email, email, subject, message)
         server.close()
     except Exception as e:
