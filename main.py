@@ -93,7 +93,7 @@ def send_mail():
         password = 'kmfnhlaiasjvxvyw'
         server.login(username, password)
         to_email = 'maillefaun@gmail.com'
-        server.sendmail(username, to_email, email, emailsubject, emailmessage)
+        server.sendmail(username, to_email, email, subject, message)
         server.close()
     except Exception as e:
         st.error(f' Ocorreu um Erro ao enviar o e-mail, Desculpe: {e}')
@@ -112,8 +112,8 @@ with st.sidebar:
         email_form = st.form(key='my_email_form', clear_on_submit=False)
         email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
         with st.expander("Formulário de Contacto"):
-            emailsubject = email_form.text_input (label = ' Escreva aqui o Assunto ')
-            emailmessage = email_form.text_area (label = ' Escreva a sua Mensagem ')
+            subject = email_form.text_input (label = ' Escreva aqui o Assunto ')
+            message = email_form.text_area (label = ' Escreva a sua Mensagem ')
             
             if email_form.form_submit_button(label=' Enviar '):
 
