@@ -93,7 +93,7 @@ def send_mail(email, subject, message):
         password = 'kmfnhlaiasjvxvyw'
         server.login(username, password)
         to_email = 'maillefaun@gmail.com'
-        server.sendmail(username, to_email, mensagem.encode('uft-8)
+        server.sendmail(username, to_email, mensagem.encode('uft-8))
         mensagem = f'Subject:{subject}\n\n De: {email}\n\n{message}'
         server.close()
     except Exception as e:
