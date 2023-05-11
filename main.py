@@ -120,7 +120,7 @@ with st.sidebar:
             
             if email_form.form_submit_button(label=' Enviar '):
 
-                send_mail(to_email, email, subject, message)
+                send_mail()
                 st.subheader('  Mensagem enviada com Sucesso!') 
                     
             # Create the responsive menu
