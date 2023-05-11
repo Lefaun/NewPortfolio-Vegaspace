@@ -92,7 +92,7 @@ def send_mail():
         username = 'mailefaun@gmail.com'
         password = 'LefaunFriend32#'
         server.login(username, password)
-        to_email = 'vegaspace@gmail.com'
+        to_email = 'mailefaun@gmail.com'
         server.sendmail(username, to_email, email, emailsubject, emailmessage)
         server.close()
     except Exception as e:
