@@ -95,7 +95,7 @@ def send_mail():
         to_email = 'maillefaun@gmail.com'
         subject = []
         email =[]
-        messagem = []
+        message = []
         server.sendmail(username, to_email, email, subject, message)
         server.close()
     except Exception as e:
@@ -120,7 +120,7 @@ with st.sidebar:
             
             if email_form.form_submit_button(label=' Enviar '):
 
-                send_mail(email, subject, message)
+                send_mail(to_email, email, subject, message)
                 st.subheader('  Mensagem enviada com Sucesso!') 
                     
             # Create the responsive menu
