@@ -155,7 +155,7 @@ def display_menu():
             st.image("i love Summer.jpg")
             button_3 = st.button("Gosto", key="psy ")
        
-    col1, col2, col3 = st.columns(3)
+        col1, col2, col3 = st.columns(3)
 
         with col1:
             st.header("AI Art")
