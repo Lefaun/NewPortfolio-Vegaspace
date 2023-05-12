@@ -161,7 +161,7 @@ def display_menu():
             st.header("AI Art")
             
             st.image ("3.png")   
-            button_4 = st.button("Gosto", key="sictemic"):
+            button_4 = st.button("Gosto", key="sictemic")
             Return("1 Like")
                 
         with col2:
