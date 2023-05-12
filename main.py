@@ -113,8 +113,8 @@ with st.sidebar:
         email_form = st.form(key='my_email_form', clear_on_submit=False)
         email = email_form.text_input(label='Por Favor Escreva o Seu Endereço de e-mail')
         
-        subject = email_form.text_input (label = ' Escreva aqui o Assunto ', 'wt',encoding='utf-8')
-        message = email_form.text_area (label = ' Escreva a sua Mensagem ', 'wt',encoding='utf-8')
+        subject = email_form.text_input (label = ' Escreva aqui o Assunto ' )
+        message = email_form.text_area (label = ' Escreva a sua Mensagem ')
             
         if email_form.form_submit_button(label=' Enviar '):
             mensagem = f'Subject:{subject}\n\n De: {email}\n\n{message}'
