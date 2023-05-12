@@ -157,20 +157,20 @@ def display_menu():
 
         with col1:
             st.header("AI Art")
-            def full_screen():
-                full_screen= '''
-            <style>
-            button[title="View fullscreen"]{
-                visibility: hidden;}
-            </style>
-            '''
-                st.image ("3.png", width = 900)
-                st.markdown(full_screen, unsafe_allow_html=True)
-                full_screen()
-               
-            if st.button("Gosto", key="sictemic"):
-                print({likes})
             
+            st.image ("3.png")   
+            if st.button("Gosto", key="sictemic"):
+                print(likes_per_day)
+                def full_screen():
+                    full_screen= '''
+                <style>
+                button[title="View fullscreen"]{
+                    visibility: hidden;}
+                </style>
+                '''
+                    st.image ("3.png", width = 900)
+                    st.markdown(full_screen, unsafe_allow_html=True)
+                    full_screen()
         with col2:
             st.header("3D Animation")
             st.image("image5.jpeg")
