@@ -142,7 +142,7 @@ def display_menu():
         with col1:
             st.header("Video")
             st.video("video1.mp4")
-            if button_1 = st.button("Gosto", key="abnormal"):
+            if st.button("Gosto", key="abnormal"):
                 print(likes_per_day)
         with col2:
             st.header("Design")
