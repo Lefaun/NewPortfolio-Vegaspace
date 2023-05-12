@@ -156,7 +156,16 @@ def display_menu():
 
         with col1:
             st.header("AI Art")
-            st.image("3.png")
+            if st.buttton("3png"):
+                st.image("3.png", widht=900)
+                hide_img_fs = '''
+                <style>
+                button[title="View fullscreen"]{
+                    visibility: hidden;}
+                </style>
+                '''
+
+            st.markdown(hide_img_fs, unsafe_allow_html=True)
             button_1 = st.button("Gosto", key="sictemic")
         with col2:
             st.header("3D Animation")
