@@ -165,7 +165,7 @@ def display_menu():
             </style>
             '''
                 st.image ("3.png", width = 900)
-                full_screen():
+                full_screen()
                
                
 
