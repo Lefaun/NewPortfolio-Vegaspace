@@ -117,7 +117,7 @@ with st.sidebar:
         message = email_form.text_area (label = ' Escreva a sua Mensagem ')
             
         if email_form.form_submit_button(label=' Enviar '):
-            mensagem = f'Subject:{subject}\n\n De: {email}\n\n Assunto: {message}, 'wt',encoding='utf-8'' 
+            mensagem = f'Subject:{subject}\n\n De: {email}\n\n Assunto: {message}, encoding='utf-8'
             send_mail(email, subject, message)
             st.subheader('  Mensagem enviada com Sucesso!') 
                     
