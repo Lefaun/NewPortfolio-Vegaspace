@@ -156,9 +156,9 @@ def display_menu():
 
         with col1:
             st.header("AI Art")
-            if st.image("3.png", on_click =(full_screen)):
+            if st.image("3.png", on_click =full_screen()):
                
-               def full_screen ():
+               def full_screen():
                    hide_img_fs = '''
                 <style>
                 button[title="View fullscreen"]{
