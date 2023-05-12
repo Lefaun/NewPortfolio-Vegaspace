@@ -142,7 +142,7 @@ def display_menu():
         with col1:
             st.header("Video")
             st.video("video1.mp4")
-            if form_submit_button("Gosto", key="abnormal"):
+            if form_submit_button(label="Gosto", key="abnormal"):
                 print("1 Like")
                 
         with col2:
@@ -160,7 +160,7 @@ def display_menu():
             st.header("AI Art")
             
             st.image ("3.png")   
-            if form_submit_button("Gosto", key="sictemic"):
+            if form_submit_button(label="Gosto", key="sictemic"):
                 print("1 Like")
                 
         with col2:
