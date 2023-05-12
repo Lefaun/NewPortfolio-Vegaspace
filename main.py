@@ -169,7 +169,7 @@ def display_menu():
                 full_screen()
                
             if st.button("Gosto", key="sictemic"):
-                print(display_images{likes})
+                print({likes})
             
         with col2:
             st.header("3D Animation")
