@@ -143,7 +143,7 @@ def display_menu():
             st.header("Video")
             st.video("video1.mp4")
             button_1 = st.button("Gosto", key="abnormal")
-            return("1 Like")
+            
                 
         with col2:
             st.header("Design")
@@ -162,7 +162,7 @@ def display_menu():
             
             st.image ("3.png")   
             button_4 = st.button("Gosto", key="sictemic")
-            Return("1 Like")
+            
                 
         with col2:
             st.header("3D Animation")
