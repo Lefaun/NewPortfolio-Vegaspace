@@ -53,7 +53,7 @@ loop="true" # For Loop
    # """,
    # unsafe_allow_html=True
 #)
-display_images=[ {"name": "2.png", "likes": 0},{"Video": "3.png", "likes": 0},{"name": "Sonia <Monteiro Imobiliary.png", "likes": 0},{"Design": "star.png", "likes": 0}]
+display_images=[ {"name": "video1.mp4", "path":"video1.mp4",  "likes": 0},{"Video": "3.png", "likes": 0},{"name": "Sonia <Monteiro Imobiliary.png", "likes": 0},{"Design": "star.png", "likes": 0}]
 
 # Create an empty dictionary to store the number of likes per day of the week
 likes_per_day = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
@@ -158,19 +158,19 @@ def display_menu():
         with col1:
             st.header("AI Art")
             def full_screen():
-                hide_img_fs = '''
+                full_screen= '''
             <style>
             button[title="View fullscreen"]{
                 visibility: hidden;}
             </style>
             '''
                 st.image ("3.png", width = 900)
+                st.markdown(full_screen, unsafe_allow_html=True)
                 full_screen()
                
-               
-
-            st.markdown(hide_img_fs, unsafe_allow_html=True)
-            button_1 = st.button("Gosto", key="sictemic")
+            if st.button("Gosto", key="sictemic"):
+                print(display_images{likes})
+            
         with col2:
             st.header("3D Animation")
             st.image("image5.jpeg")
