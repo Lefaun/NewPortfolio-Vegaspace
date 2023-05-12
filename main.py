@@ -160,18 +160,9 @@ def display_menu():
             st.header("AI Art")
             
             st.image ("3.png")   
-            if st.button("Gosto", key="sictemic"):
+            if form_submit_button("Gosto", key="sictemic"):
                 print("1 Like")
-                def full_screen():
-                    full_screen= '''
-                <style>
-                button[title="View fullscreen"]{
-                    visibility: hidden;}
-                </style>
-                '''
-                    st.image ("3.png", width = 1000)
-                    st.markdown(full_screen, unsafe_allow_html=True)
-                    full_screen()
+                
         with col2:
             st.header("3D Animation")
             st.image("image5.jpeg")
