@@ -158,7 +158,7 @@ def display_menu():
             st.header("AI Art")
             if st.image("3.png", on_click =()):
                st.image ("3.png", width = 900)
-                hide_img_fs = '''
+               hide_img_fs = '''
                 <style>
                 button[title="View fullscreen"]{
                     visibility: hidden;}
