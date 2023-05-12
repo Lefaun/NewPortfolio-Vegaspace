@@ -142,7 +142,8 @@ def display_menu():
         with col1:
             st.header("Video")
             st.video("video1.mp4")
-            button_1 = st.button("Gosto", key="abnormal")
+            if button_1 = st.button("Gosto", key="abnormal"):
+                print(likes_per_day)
         with col2:
             st.header("Design")
             st.image("image2.jpg")
@@ -157,13 +158,13 @@ def display_menu():
         with col1:
             st.header("AI Art")
             def full_screen():
-                   hide_img_fs = '''
-                <style>
-                button[title="View fullscreen"]{
-                    visibility: hidden;}
-                </style>
-                '''
-                   st.image ("3.png", width = 900)
+                hide_img_fs = '''
+            <style>
+            button[title="View fullscreen"]{
+                visibility: hidden;}
+            </style>
+            '''
+                st.image ("3.png", width = 900)
              full_screen():
                
                
