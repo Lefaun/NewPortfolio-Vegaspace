@@ -143,7 +143,8 @@ def display_menu():
             st.header("Video")
             st.video("video1.mp4")
             if st.button("Gosto", key="abnormal"):
-                print(likes_per_day)
+                print("1 Like")
+                
         with col2:
             st.header("Design")
             st.image("image2.jpg")
@@ -160,7 +161,7 @@ def display_menu():
             
             st.image ("3.png")   
             if st.button("Gosto", key="sictemic"):
-                print(likes_per_day)
+                print("1 Like")
                 def full_screen():
                     full_screen= '''
                 <style>
@@ -168,7 +169,7 @@ def display_menu():
                     visibility: hidden;}
                 </style>
                 '''
-                    st.image ("3.png", width = 900)
+                    st.image ("3.png", width = 1000)
                     st.markdown(full_screen, unsafe_allow_html=True)
                     full_screen()
         with col2:
