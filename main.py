@@ -142,8 +142,8 @@ def display_menu():
         with col1:
             st.header("Video")
             st.video("video1.mp4")
-            if st.button("Gosto", key="abnormal"):
-                print("1 Like")
+            if button_1 = st.button("Gosto", key="abnormal"):
+                return("1 Like")
                 
         with col2:
             st.header("Design")
@@ -154,14 +154,15 @@ def display_menu():
             st.header("3D Design")
             st.image("i love Summer.jpg")
             button_3 = st.button("Gosto", key="psy ")
-        col1, col2, col3 = st.columns(3)
+       
+    col1, col2, col3 = st.columns(3)
 
         with col1:
             st.header("AI Art")
             
             st.image ("3.png")   
-            if form_submit_button(label="Gosto", key="sictemic"):
-                print("1 Like")
+            if button_4 = st.button("Gosto", key="sictemic"):
+                Return("1 Like")
                 
         with col2:
             st.header("3D Animation")
