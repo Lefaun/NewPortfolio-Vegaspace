@@ -156,7 +156,7 @@ def display_menu():
 
         with col1:
             st.header("AI Art")
-            if st.image("3.png", on_click =):
+            if st.image("3.png", on_click =()):
                st.image ("3.png", width = 900)
                 hide_img_fs = '''
                 <style>
