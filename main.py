@@ -165,7 +165,7 @@ def display_menu():
                     visibility: hidden;}
                 </style>
                 '''
-                st.image ("3.png", width = 900)
+                    st.image ("3.png", width = 900)
 
             st.markdown(hide_img_fs, unsafe_allow_html=True)
             button_1 = st.button("Gosto", key="sictemic")
