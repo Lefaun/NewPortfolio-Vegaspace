@@ -211,7 +211,7 @@ def display_menu():
         components.iframe("https://renderstuff.com/tools/360-panorama-web-viewer-sharing/?image=https://live.staticflickr.com/65535/52915761092_c09c7bf9ec_k.jpg", width=750, height=600)
        
         st.title(" The Faun´s Tree House - 3D")
-        components.iframe("https://www.flickr.com/photos/198439721@N08/52916746725/in/dateposted-public/",  width=750, height=600)
+        components.iframe("https://flic.kr/p/2oC5ada",  width=750, height=600)
         st.video("human.mp4")
         
     elif choice == "Video":
