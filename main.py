@@ -208,7 +208,7 @@ def display_menu():
         
         #st.markdown(video_html, unsafe_allow_html=True)
         st.title(" The Faun´s Tree House - 2D")
-        components.iframe("https://panoraven.com/en/embed/wlFbzkcGtC", width=750, height=600)
+        components.iframe("<iframe width="600" height="400" title="Panorama Viewer" scrolling="no" src="https://renderstuff.com/tools/360-panorama-web-viewer-embed/?image=https://live.staticflickr.com/65535/52915761092_c09c7bf9ec_k.jpg"></iframe>", width=750, height=600)
        
         st.title(" The Faun´s Tree House - 3D")
         components.iframe("https://panoraven.com/en/embed/zXZLSFbLwI",  width=750, height=600)
