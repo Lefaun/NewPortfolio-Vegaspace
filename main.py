@@ -207,7 +207,8 @@ def display_menu():
             st.video("IMG_5277.mp4")
             st.header("Architecture Home")
             st.video("IMG_5278.mp4")
-            
+            st.header("Architecture Interior3")
+            st.video("IMG_5277.mp4")
     elif choice == "Art":   
     
         button_2 = st.button("Gosto", key="asian")
