@@ -208,7 +208,7 @@ def display_menu():
             st.header("Architecture Home")
             st.video("IMG_5278.mp4")
             st.header("Architecture Interior3")
-            st.video("IMG_5277.mp4")
+            st.video("Screen Recording 2023-09-20 at 19.29.53.mp4")
 
     components.iframe("https://v3d.net/fej", width=700, height=600)
     st.markdown(components.iframe, unsafe_allow_html=True)
