@@ -197,11 +197,14 @@ def display_menu():
     elif choice == "Architecture":    
         
         st.header("Architecture")
-        st.video("aero_recording 2.mp4", height=350)
-        st.header("Architecture Interior")
-        st.video("IMG_5277.mp4")
-        st.header("Architecture Home")
-        st.video("IMG_5278.mp4")
+        col1 , col2 st.columns(2)
+        with col1:
+            st.video("aero_recording 2.mp4",)
+            st.header("Architecture Interior")
+            st.video("IMG_5277.mp4")
+        with col2:
+            st.header("Architecture Home")
+            st.video("IMG_5278.mp4")
     elif choice == "Art":   
     
         button_2 = st.button("Gosto", key="asian")
