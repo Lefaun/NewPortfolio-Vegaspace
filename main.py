@@ -126,10 +126,10 @@ with st.sidebar:
 def display_menu():
     
     
-    menu = ["Home", "About", "Art", "Design", "Video", "3D Games", "3D","IoT", "Graphics", "IMAGE - Classifier APP"]
+    menu = ["Home", "About", "Art", "Architecture", "Video", "3D Games", "3D","IoT", "Graphics", "IMAGE - Classifier APP"]
     #choice = st.selectbox("Select an option", menu)
     
-    choice = option_menu(None, ["Home", "About", "Art", "Design", "Video", "3D Games","3D","IoT", "Graphics", "IMAGE - Classifier APP"],
+    choice = option_menu(None, ["Home", "About", "Art", "Architecture", "Video", "3D Games","3D","IoT", "Graphics", "IMAGE - Classifier APP"],
     icons=None,
     default_index=0, orientation="horizontal",)
     
@@ -205,8 +205,16 @@ def display_menu():
             #type="video/mp4" />
        # </video>
        #'''
+    elif choice == "Architecture":    
         
-        #st.markdown(video_html, unsafe_allow_html=True)
+        st.header("Architecture")
+        st.video("aero_recording 2.mp4")
+        st.video("IMG_5277.mp4")
+        st.video("IMG_5278.mp4")
+        st.image("2.png")
+    elif choice == "Art":
+        button_2 = st.button("Gosto", key="asian")
+    ue)
         st.title(" The Faun´s Tree House - 2D")
         components.iframe("https://renderstuff.com/tools/360-panorama-web-viewer-sharing/?image=https://live.staticflickr.com/65535/52915761092_c09c7bf9ec_k.jpg", width=750, height=600)
        
@@ -225,7 +233,8 @@ def display_menu():
         st.title("3D Gallery")
         st.write("Galeria de Criações 3D")
         col1, col2, col3 = st.columns(3)
-
+   
+        #st.markdown(video_html, unsafe_allow_html=Tr
         with col1:
             st.header("Video")
             st.image("3.png")
@@ -239,18 +248,6 @@ def display_menu():
             st.header("3D ART")
             st.image("Carrinha.jpeg")
             button_3 = st.button("Gosto", key="psy ")
-        col1, col2 = st.columns(2)
-            
-        with col1:
-            st.header("Design")
-            st.image("2.png")
-
-            button_2 = st.button("Gosto", key="asian")
-        with col2:
-            st.header("3D ART")
-            st.image("Carrinha.jpeg")
-            button_3 = st.button("Gosto", key="cutr ")
-       
             
         st.title("Video")
         st.video("Cutscene Final.mp4")
