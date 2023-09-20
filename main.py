@@ -209,6 +209,9 @@ def display_menu():
             st.video("IMG_5278.mp4")
             st.header("Architecture Interior3")
             st.video("IMG_5277.mp4")
+
+    components.iframe("https://v3d.net/fej", width=700, height=600)
+    st.markdown(components.iframe, unsafe_allow_html=True)
     elif choice == "Art":   
     
         button_2 = st.button("Gosto", key="asian")
