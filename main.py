@@ -194,17 +194,6 @@ def display_menu():
 
         components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
-       
-    elif choice =="Art":
-        
-        #video_html = f'''
-        
-        #<video controls width="650" autoplay="true" muted="true" loop="true">
-            #<source 
-            #src="human.mp4" 
-            #type="video/mp4" />
-       # </video>
-       #'''
     elif choice == "Architecture":    
         
         st.header("Architecture")
@@ -212,9 +201,10 @@ def display_menu():
         st.video("IMG_5277.mp4")
         st.video("IMG_5278.mp4")
         st.image("2.png")
-    elif choice == "Art":
+    elif choice == "Art":   
+    
         button_2 = st.button("Gosto", key="asian")
-    ue)
+   
         st.title(" The Faun´s Tree House - 2D")
         components.iframe("https://renderstuff.com/tools/360-panorama-web-viewer-sharing/?image=https://live.staticflickr.com/65535/52915761092_c09c7bf9ec_k.jpg", width=750, height=600)
        
