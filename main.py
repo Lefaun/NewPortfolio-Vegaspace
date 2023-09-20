@@ -201,9 +201,10 @@ def display_menu():
         with col1:
             st.header("Architecture Interior1")
             st.video("aero_recording 2.mp4",)
+            
+        with col2:
             st.header("Architecture Interior2")
             st.video("IMG_5277.mp4")
-        with col2:
             st.header("Architecture Home")
             st.video("IMG_5278.mp4")
             
