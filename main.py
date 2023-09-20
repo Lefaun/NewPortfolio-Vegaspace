@@ -210,8 +210,8 @@ def display_menu():
             st.header("Architecture Interior3")
             st.video("Screen Recording 2023-09-20 at 19.29.53.mp4")
 
-    components.iframe("https://v3d.net/fej", width=700, height=600)
-    st.markdown(components.iframe, unsafe_allow_html=True)
+        components.iframe("https://v3d.net/fej", width=700, height=600)
+        st.markdown(components.iframe, unsafe_allow_html=True)
     elif choice == "Art":   
     
         button_2 = st.button("Gosto", key="asian")
