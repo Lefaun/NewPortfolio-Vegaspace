@@ -187,7 +187,7 @@ def display_menu():
 
         show_pdf('CV - Paulo Monteiro - Mestrado 2022.pdf')
         st.title("Tese de Mestrado")
-        components.iframe("https://flipbookpdf.net/web/site/e3e2e164c44b69946f21316cc7057b7bd790868a202305.pdf.html", width=750, height =600)
+        components.iframe("https://flipbookpdf.net/web/site/abe8a84539c5076749ade4d69621d7ce866763b5202403.pdf.html", width=750, height =600)
     elif choice == "3D Games":
         st.title("Exemple de Pequeno Jogo em Python e Blender")
         st.write("Jogo 3D em UPBGE")
