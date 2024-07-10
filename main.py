@@ -209,7 +209,7 @@ def display_menu():
 
         with col1:
             st.header("Video")
-            st.video("video1.mp4")
+            st.video("6.mp4")
             button_1 = st.button("Gosto", key="abnormal")
             
                 
