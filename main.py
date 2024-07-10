@@ -246,7 +246,7 @@ def display_menu():
         st.write("O meu Nome é Paulo Ricardo Monteiro, formado em 2008 em Audiovisual e Multimédia, Actualmente formei-me com o mestrado em Engenharia Informática - área de Multimedia"
                  "Tendo defendido a minha Tese com 15 valores no âmbito dos sistemas de Realidade Virtual e Realidade Aumentada para os Setores Museológicos e da Arte Digital")
         st.image('Me.jpg', width=300)
-        st.image('CV2.jpg', width=600)
+        st.image('CV2.png', width=600)
 
         #def show_pdf(file_path):
             #with open("CV - Paulo Monteiro - Mestrado 2023 com interesses_vs_atualizada2.pdf", "rb") as f:
