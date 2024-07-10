@@ -248,7 +248,7 @@ def display_menu():
         st.image('Me.jpg', width=300)
 
         def show_pdf(file_path):
-            with open("CV - Paulo Monteiro - Mestrado 2022.pdf", "rb") as f:
+            with open("CV - Paulo Monteiro - Mestrado 2023 com interesses_vs_atualizada2.pdf", "rb") as f:
                 base64_pdf = base64.b64encode(f.read()).decode('utf-8')
             pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
             st.markdown(pdf_display, unsafe_allow_html=True)
