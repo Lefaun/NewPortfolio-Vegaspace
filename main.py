@@ -246,14 +246,15 @@ def display_menu():
         st.write("O meu Nome é Paulo Ricardo Monteiro, formado em 2008 em Audiovisual e Multimédia, Actualmente formei-me com o mestrado em Engenharia Informática - área de Multimedia"
                  "Tendo defendido a minha Tese com 15 valores no âmbito dos sistemas de Realidade Virtual e Realidade Aumentada para os Setores Museológicos e da Arte Digital")
         st.image('Me.jpg', width=300)
+        st.image('CV2.jpg', width=600)
 
-        def show_pdf(file_path):
-            with open("CV - Paulo Monteiro - Mestrado 2023 com interesses_vs_atualizada2.pdf", "rb") as f:
-                base64_pdf = base64.b64encode(f.read()).decode('utf-8')
-            pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
-            st.markdown(pdf_display, unsafe_allow_html=True)
+        #def show_pdf(file_path):
+            #with open("CV - Paulo Monteiro - Mestrado 2023 com interesses_vs_atualizada2.pdf", "rb") as f:
+                #base64_pdf = base64.b64encode(f.read()).decode('utf-8')
+            #pdf_display = f'<iframe src="data:application/pdf;base64,{base64_pdf}" width="800" height="800" type="application/pdf"></iframe>'
+            #st.markdown(pdf_display, unsafe_allow_html=True)
 
-        show_pdf('CV - Paulo Monteiro - Mestrado 2022.pdf')
+        #show_pdf('CV - Paulo Monteiro - Mestrado 2022.pdf')
         st.title("Tese de Mestrado")
         components.iframe("https://flipbookpdf.net/web/site/abe8a84539c5076749ade4d69621d7ce866763b5202403.pdf.html", width=750, height =600)
     elif choice == "3D Games":
