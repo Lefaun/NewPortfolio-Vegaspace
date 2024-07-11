@@ -278,7 +278,7 @@ def display_menu():
             st.video("IMG_5277.mp4")
             st.header("Architecture Home")
             st.video("IMG_5278.mp4")
-            st.header("Architecture Interior3")
+            st.header("Building City")
             st.video("Screen Recording 2023-09-20 at 19.29.53.mp4")
             st.header("Architecture Interior4")
             st.video("IMG_0371.mp4")
