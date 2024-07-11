@@ -270,6 +270,8 @@ def display_menu():
         with col1:
             st.header("Architecture Interior1")
             st.video("aero_recording 2.mp4",)
+            st.header("Architecture Exterior")
+            st.image("Image-Architectura.png)
             
         with col2:
             st.header("Architecture Interior2")
