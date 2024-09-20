@@ -545,7 +545,7 @@ def display_menu():
 
             st.altair_chart(c, use_container_width=True)
 st.markdown('</div>', unsafe_allow_html=True)
-
+display_menu()   
 
 #######################################################
 
@@ -575,7 +575,7 @@ def load_csv(url):
         df = pd.read_csv(data)
         return df
     else:
-        st.error("Falha ao atualizar no Porfolio.")
+        st.error("Falha ao atualizar no Portfolio.")
         return pd.DataFrame(columns=["Name", "Idea"])
 
 # Function to get the SHA of the file
@@ -615,7 +615,7 @@ def update_csv_on_github(repo, path, token, content, sha):
     if response.status_code == 200:
         st.success("O seu comentário foi adicionado, obrigado")
     else:
-        st.error(f"Failed to update the CSV on GitHub: {response.status_code}")
+        st.error(f"Falha ao Atualizar dados do Portfolio: {response.status_code}")
         st.error(response.json())
 
 # Load existing ideas from GitHub CSV
@@ -623,12 +623,12 @@ csv_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{GITHUB_FILE_PA
 df_ideas = load_csv(csv_url)
 
 # Streamlit form to submit ideas
-st.title("Deixe aqui sua ideia o comentário")
+st.title("Deixe aqui sua ideia ou comentário")
 name = st.text_input("O seu Nome:")
-idea = st.text_area("Qual a Idea:")
+idea = st.text_area("Qual a Ideia:")
 
 # Handle form submission
-if st.button("Submit"):
+if st.button("Enviar"):
     if name and idea:
         new_row = pd.DataFrame([[name, idea]], columns=["Name", "Idea"])
         df_ideas = pd.concat([df_ideas, new_row], ignore_index=True)
@@ -642,9 +642,9 @@ if st.button("Submit"):
         st.error("Por favor preencha primeiro os campos de NOME e Mensagem")
 
 # Display submitted ideas
-st.subheader("Submitted Ideas:")
+st.subheader("Ideias e Comentários:")
 for i, row in df_ideas.iterrows():
     st.write(f"{i + 1}. **{row['Name']}**: {row['Idea']}")
-display_menu()   
+ 
 
 
