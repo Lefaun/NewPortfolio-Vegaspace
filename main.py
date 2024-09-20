@@ -575,7 +575,7 @@ def load_csv(url):
         df = pd.read_csv(data)
         return df
     else:
-        st.error("Failed to load data from GitHub.")
+        st.error("Falha ao atualizar no Porfolio.")
         return pd.DataFrame(columns=["Name", "Idea"])
 
 # Function to get the SHA of the file
@@ -589,7 +589,7 @@ def get_file_sha(repo, path, token):
         file_info = response.json()
         return file_info['sha']
     else:
-        st.error(f"Failed to fetch file SHA. Status Code: {response.status_code}")
+        st.error(f"Falha ao atualizar dados online: {response.status_code}")
         st.error(f"Response: {response.text}")
         return None
 
@@ -601,7 +601,7 @@ def update_csv_on_github(repo, path, token, content, sha):
         "Content-Type": "application/json"
     }
 
-    message = "Updating CSV with new idea submission"
+    message = "A atualizar dados dos comentários"
     content_encoded = base64.b64encode(content.encode()).decode("utf-8")
 
     data = {
@@ -613,7 +613,7 @@ def update_csv_on_github(repo, path, token, content, sha):
     response = requests.put(url, headers=headers, data=json.dumps(data))
 
     if response.status_code == 200:
-        st.success("CSV file updated successfully on GitHub.")
+        st.success("O seu comentário foi adicionado, obrigado")
     else:
         st.error(f"Failed to update the CSV on GitHub: {response.status_code}")
         st.error(response.json())
@@ -623,9 +623,9 @@ csv_url = f"https://raw.githubusercontent.com/{GITHUB_REPO}/main/{GITHUB_FILE_PA
 df_ideas = load_csv(csv_url)
 
 # Streamlit form to submit ideas
-st.title("Submit Your Idea")
-name = st.text_input("Your Name:")
-idea = st.text_area("Your Idea:")
+st.title("Deixe aqui sua ideia o comentário")
+name = st.text_input("O seu Nome:")
+idea = st.text_area("Qual a Idea:")
 
 # Handle form submission
 if st.button("Submit"):
@@ -639,7 +639,7 @@ if st.button("Submit"):
         if sha:
             update_csv_on_github(GITHUB_REPO, GITHUB_FILE_PATH, GITHUB_ACCESS_TOKEN, csv_content, sha)
     else:
-        st.error("Please fill out both fields before submitting.")
+        st.error("Por favor preencha primeiro os campos de NOME e Mensagem")
 
 # Display submitted ideas
 st.subheader("Submitted Ideas:")
