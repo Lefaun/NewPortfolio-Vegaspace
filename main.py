@@ -269,7 +269,7 @@ def display_menu():
         col1 , col2 = st.columns(2)
         with col1:
             st.header("Ecological Towers")
-            components.iframe("https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=076138e049d34dad974e4dc47c8755fff", width=750, height=600)
+            components.iframe("https://sketchfab.com/vegaspace?utm_medium=embed&utm_campaign=share-popup&utm_content=076138e049d34dad974e4dc47c8755ff", width=750, height=600)
             #st.video("aero_recording 2.mp4",)
             #st.header("Architecture Exterior")
             #st.image("Image-Architectura.png")
