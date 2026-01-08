@@ -337,11 +337,7 @@ def display_menu():
 
         st.title("Estisticas da Saúde DataScience - BioInformátic 2004 a 2020 ")
 
-        #st.write(
-            #"""Estudo Efetuado pelo INE - Instiituto Nacional de Estatística sobre o estado da Saúde Mental dos Portugueses 
-            #divídidos por Género, Faixa Étaria e Ocupação Profissional
-            #"""
-        #)
+       
         p = open("lda.html")
         components.html(p.read(), width=1000, height=800, )
         df = pd.read_csv(
