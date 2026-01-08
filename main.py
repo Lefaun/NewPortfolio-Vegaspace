@@ -282,6 +282,8 @@ def display_menu():
             st.header("Ecological Towers")
             components.iframe("https://sketchfab.com/models/076138e049d34dad974e4dc47c8755ff/embed", width=650, height=600)
             #st.video("aero_recording 2.mp4",)
+            st.header("edificio Cruzeiro")
+            components.iframe("https://sketchfab.com/models/e2b1467f2fca43a1851395d5205b3530/embed", width=650, height=600)
             st.header("Architecture Exterior")
             st.image("Image-Architectura.png")
             
