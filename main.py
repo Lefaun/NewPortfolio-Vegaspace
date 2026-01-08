@@ -170,7 +170,7 @@ def send_mail(email, subject, message):
     # 1. as sidebar menu
 with st.sidebar:
    
-    st.image('Me.png', width=100%,)
+    st.image('Me.png', width=100%)
 
     selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
 
