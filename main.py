@@ -322,7 +322,24 @@ def display_menu():
             st.header("3D ART")
             st.image("Carrinha.jpeg")
             button_3 = st.button("Gosto", key="psy ")
-            
+        
+        #Atualização de Galeria 3D
+        
+        with col1:
+            st.header("Video")
+            st.video("Ptfolio3.mp4")
+            button_1 = st.button("Gosto", key="xisp")
+        with col2:
+            st.header("Design")
+            st.video("Ptfolio1.mp4")
+
+            button_2 = st.button("Gosto", key="local")
+        with col3:
+            st.title("Lisbon Mapping Model")
+            components.iframe("https://sketchfab.com/3d-models/lisbon-3e99cbb8b0e34e4485e7accfa421f8e0",  width=350, height=300)
+            button_3 = st.button("Gosto", key="safe")
+        
+        
         st.title("Video")
         st.video("Cutscene Final.mp4")
         button_1 = st.button("Gosto", key="sictemic")
