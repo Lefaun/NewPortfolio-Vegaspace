@@ -315,7 +315,7 @@ def display_menu():
         st.title("|Projeto Video  CLIP | o RECADO - SAM the Kid- Video CLIP")        
         st.video("SAM_THE_KID.mp4")
         st.title("Franz Ferdinand")
-        st.video("")
+        
         
     elif choice == "3D":
         st.title("3D Gallery")
