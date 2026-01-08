@@ -283,7 +283,7 @@ def display_menu():
             st.header("Architecture Interior4")
             st.video("IMG_0371.mp4")
 
-        components.iframe("https://sketchfab.com/3d-models/lisbon-3e99cbb8b0e34e4485e7accfa421f8e0?utm_medium=embed&utm_campaign=share-popup&utm_content=3e99cbb8b0e34e4485e7accfa421f8e0" , width=700, height=600)
+        components.iframe("https://sketchfab.com/models/3e99cbb8b0e34e4485e7accfa421f8e0/embed" , width=700, height=600)
         st.markdown(components.iframe, unsafe_allow_html=True)
     elif choice == "Art":   
     
