@@ -263,6 +263,11 @@ def display_menu():
         components.iframe("https://sketchfab.com/models/ed63f59358354f6da8061fbcaeeaead2/embed", width=750, height=600)
         #Comentado components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
+
+        NEW Games
+        
+        st.title("Solar System Game")
+        components.iframe("https://solarsystemcycle.netlify.app/", width=750, height=600)
     elif choice == "Architecture":    
         
         st.header("Architecture")
