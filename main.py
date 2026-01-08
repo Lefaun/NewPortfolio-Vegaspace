@@ -366,7 +366,7 @@ def display_menu():
         st.write("Criação de Dashboarding e Infografias para Data Science .")
       
 
-        st.title("Estatisticas da Saúde Mental no Período de 2004 a 2020 ")
+        st.title("Estisticas da Saúde DataScience - BioInformátic 2004 a 2020 ")
 
         st.write(
             """Estudo Efetuado pelo INE - Instiituto Nacional de Estatística sobre o estado da Saúde Mental dos Portugueses 
