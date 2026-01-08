@@ -323,7 +323,7 @@ def display_menu():
         #st.markdown(video_html, unsafe_allow_html=Tr
         with col1:
             st.header("Video")
-            components.iframe("https://sketchfab.com/models/380494f264c94af4bb6123be86fb985c/embed", width=900, height=600)
+            components.iframe("https://sketchfab.com/models/380494f264c94af4bb6123be86fb985c/embed", width=850, height=500)
             button_1 = st.button("Gosto", key="abnormal")
             
 
