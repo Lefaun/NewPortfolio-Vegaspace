@@ -337,7 +337,7 @@ def display_menu():
             button_2 = st.button("Gosto", key="local")
         with col3:
             st.title("Lisbon Mapping Model")
-            components.iframe("https://sketchfab.com/3d-models/lisbon-3e99cbb8b0e34e4485e7accfa421f8e0",  width=350, height=300)
+            components.iframe("https://sketchfab.com/models/6750052d34c54f5b97570b6852be2848/embed",  width=350, height=300)
             button_3 = st.button("Gosto", key="safe")
         
         
