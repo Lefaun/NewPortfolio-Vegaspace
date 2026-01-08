@@ -267,7 +267,10 @@ def display_menu():
         #NEW Games
         
         st.title("Solar System Game")
-        components.iframe("https://solarsystemcycle.netlify.app/", width=750, height=600)
+        components.iframe("https://solarsystemcycle.netlify.app/", width=900, height=700)
+
+        st.title("Amanda Walking")
+        components.iframe("https://simplegamewalk.netlify.app/", width=900, height=700)
     elif choice == "Architecture":    
         
         st.header("Architecture")
