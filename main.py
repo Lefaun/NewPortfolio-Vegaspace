@@ -94,39 +94,7 @@ custom_css = """
 
 
 
-main_bg = "lightgreen.jpeg"
-main_bg_ext = "jpeg"
 
-side_bg = "lightgreen.jpeg"
-side_bg_ext = "jpeg"
-video_html = open("human.mp4", 'rb').read()
-color_bgg ="#f0f0f0"
-opacity_bg = 0.6
-mask = 'untitled.png' # path to your mask image
-mask_width = 1920 # the width of your mask image
-autoplay="true" # For autoplay
-muted="true" # For mute
-loop="true" # For Loop
-
-
-#st.markdown(
-   # f"""
-    #<style>
-   # .reportview-container {{
-    #    background: url(data:image/{main_bg_ext};base64,{base64.b64encode(open(main_bg, "rb").read()).decode()})
-    #}}
-   #.sidebar .sidebar-content {{
-     #   background: url(data:image/{side_bg_ext};base64,{base64.b64encode(open(side_bg, "rb").read()).decode()})
-   # }}
-   # </style>
-   # """,
-   # unsafe_allow_html=True
-#)
-display_images=[ {"name": "video1.mp4", "path":"video1.mp4",  "likes": 0},{"Video": "3.png", "likes": 0},{"name": "Sonia <Monteiro Imobiliary.png", "likes": 0},{"Design": "star.png", "likes": 0}]
-
-# Create an empty dictionary to store the number of likes per day of the week
-likes_per_day = {0: 0, 1: 0, 2: 0, 3: 0, 4: 0, 5: 0, 6: 0}
-days_of_week = {0: "Monday", 1: "Tuesday", 2: "Wednesday", 3: "Thursday", 4: "Friday", 5: "Saturday", 6: "Sunday"}
 
 
 days_of_week = {
