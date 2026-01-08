@@ -318,19 +318,17 @@ def display_menu():
     elif choice == "3D":
         st.title("3D Gallery")
         st.write("Galeria de Criações 3D")
-        col1, col2, col3 = st.columns(3)
+        col1, col2, = st.columns(2)
    
         #st.markdown(video_html, unsafe_allow_html=Tr
         with col1:
             st.header("Video")
             components.iframe("https://sketchfab.com/models/380494f264c94af4bb6123be86fb985c/embed")
             button_1 = st.button("Gosto", key="abnormal")
-        with col2:
-            st.header("Design")
-            st.image("2.png")
+            
 
             button_2 = st.button("Gosto", key="cool")
-        with col3:
+        with col2:
             st.header("3D ART")
             st.image("Carrinha.jpeg")
             button_3 = st.button("Gosto", key="psy ")
