@@ -170,7 +170,7 @@ def send_mail(email, subject, message):
     # 1. as sidebar menu
 with st.sidebar:
    
-    st.image('Me.png', width=300,)
+    st.image('Me.png', width=100%,)
 
     selected = option_menu("Meu Menu", (["Home", 'VIdeo', 'Contacte Me']),menu_icon="cast", default_index=1, )
 
@@ -245,8 +245,8 @@ def display_menu():
         st.title("About Me")
         st.write("O meu Nome é Paulo Ricardo Monteiro, formado em 2008 em Audiovisual e Multimédia, Actualmente formei-me com o mestrado em Engenharia Informática - área de Multimedia"
                  "Tendo defendido a minha Tese com 15 valores no âmbito dos sistemas de Realidade Virtual e Realidade Aumentada para os Setores Museológicos e da Arte Digital")
-        #st.image('Me.jpg', width=300)
-        st.image('CV2.png', width=600)
+        #st.image('Me.jpg', width=100%)
+        st.image('CV2.png', width=100%)
 
         #def show_pdf(file_path):
             #with open("CV - Paulo Monteiro - Mestrado 2023 com interesses_vs_atualizada2.pdf", "rb") as f:
