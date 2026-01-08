@@ -256,11 +256,11 @@ def display_menu():
 
         #show_pdf('CV - Paulo Monteiro - Mestrado 2022.pdf')
         st.title("Tese de Mestrado")
-        components.iframe("https://www.flipbookpdf.net/web/site/2d28aac1582b9a814985f06ad159247e52a9b869202601.pdf.html", width=450, height =500)
+        components.iframe("https://www.flipbookpdf.net/web/site/2d28aac1582b9a814985f06ad159247e52a9b869202601.pdf.html", width=600, height =700)
     elif choice == "3D Games":
         st.title("Exemple de Pequeno Jogo em Python e Blender")
         st.write("Jogo 3D em UPBGE")
-        components.iframe("https://sketchfab.com/models/ed63f59358354f6da8061fbcaeeaead2/embed", width=750, height=600)
+        components.iframe("https://sketchfab.com/models/ed63f59358354f6da8061fbcaeeaead2/embed", width=450, height=300)
         #Comentado components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
 
