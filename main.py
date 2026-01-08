@@ -271,6 +271,9 @@ def display_menu():
 
         st.title("Amanda Walking")
         components.iframe("https://simplegamewalk.netlify.app/", width=900, height=700)
+
+        st.title("Drone Diving")
+        components.iframe("https://drivethedrone.netlify.app/", width=900, height=700)
     elif choice == "Architecture":    
         
         st.header("Architecture")
