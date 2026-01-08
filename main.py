@@ -283,7 +283,7 @@ def display_menu():
             st.header("Architecture Interior4")
             st.video("IMG_0371.mp4")
 
-        components.iframe("https://v3d.net/fej", width=700, height=600)
+        components.iframe("<div class="sketchfab-embed-wrapper"> <iframe title="Lisbon" frameborder="0" allowfullscreen mozallowfullscreen="true" webkitallowfullscreen="true" allow="autoplay; fullscreen; xr-spatial-tracking" xr-spatial-tracking execution-while-out-of-viewport execution-while-not-rendered web-share src="https://sketchfab.com/models/3e99cbb8b0e34e4485e7accfa421f8e0/embed"> </iframe> <p style="font-size: 13px; font-weight: normal; margin: 5px; color: #4A4A4A;"> <a href="https://sketchfab.com/3d-models/lisbon-3e99cbb8b0e34e4485e7accfa421f8e0?utm_medium=embed&utm_campaign=share-popup&utm_content=3e99cbb8b0e34e4485e7accfa421f8e0" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> Lisbon </a> by <a href="https://sketchfab.com/vegaspace?utm_medium=embed&utm_campaign=share-popup&utm_content=3e99cbb8b0e34e4485e7accfa421f8e0" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;"> vegaspace </a> on <a href="https://sketchfab.com?utm_medium=embed&utm_campaign=share-popup&utm_content=3e99cbb8b0e34e4485e7accfa421f8e0" target="_blank" rel="nofollow" style="font-weight: bold; color: #1CAAD9;">Sketchfab</a></p></div>", width=700, height=600)
         st.markdown(components.iframe, unsafe_allow_html=True)
     elif choice == "Art":   
     
