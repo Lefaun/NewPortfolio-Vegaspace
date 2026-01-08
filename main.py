@@ -82,11 +82,11 @@ custom_css = """
 #"""
 
 # Inject the CSS and HTML into the Streamlit app
-st.markdown(custom_css, unsafe_allow_html=True)
-st.markdown(openprocessing_iframe, unsafe_allow_html=True)
+#st.markdown(custom_css, unsafe_allow_html=True)
+#st.markdown(openprocessing_iframe, unsafe_allow_html=True)
 
 # Wrap your Streamlit content inside a div with the 'foreground' class
-st.markdown('<div class="foreground">', unsafe_allow_html=True)
+#st.markdown('<div class="foreground">', unsafe_allow_html=True)
 
 ################################################
 
