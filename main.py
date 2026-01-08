@@ -72,14 +72,14 @@ custom_css = """
         foreground: orange;
     }
     </style>
-"""
+#"""
 
 # HTML to embed the OpenProcessing iframe
-openprocessing_iframe = """
-    <div class="background">
+#openprocessing_iframe = """
+    #<div class="background">
         #<iframe src="https://openprocessing.org/sketch/2257597/embed/" width="100%" height="100%"></iframe>#
-    </div>
-"""
+    #</div>
+#"""
 
 # Inject the CSS and HTML into the Streamlit app
 st.markdown(custom_css, unsafe_allow_html=True)
