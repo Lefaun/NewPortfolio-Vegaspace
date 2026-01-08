@@ -260,8 +260,8 @@ def display_menu():
     elif choice == "3D Games":
         st.title("Exemple de Pequeno Jogo em Python e Blender")
         st.write("Jogo 3D em UPBGE")
-
-        components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
+        components.iframe("https://sketchfab.com/models/ed63f59358354f6da8061fbcaeeaead2/embed", width=750, height=600)
+        #Comentado components.iframe("https://cdn.soft8soft.com/AROAJSY2GOEHMOFUVPIOE:85cf9c6521/Sub%20Python%20Game/Sub%20Python%20Game.html", width=750, height =600)
         st.video("https://youtu.be/ZfxPMMzyeX8")
     elif choice == "Architecture":    
         
