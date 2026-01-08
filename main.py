@@ -194,10 +194,10 @@ with st.sidebar:
 def display_menu():
     
     
-    menu = ["Home", "About", "Art", "Architecture", "Video", "3D Games", "3D","IoT", "Graphics", "IMAGE - Classifier APP"]
+    menu = ["Home", "About",  "Architecture", "Video", "3D Games", "3D","IoT", "Graphics", "IMAGE - Classifier APP"]
     #choice = st.selectbox("Select an option", menu)
     
-    choice = option_menu(None, ["Home", "About", "Art", "Architecture", "Video", "3D Games","3D","IoT", "Graphics", "IMAGE - Classifier APP"],
+    choice = option_menu(None, ["Home", "About", "Architecture", "Video", "3D Games","3D","IoT", "Graphics", "IMAGE - Classifier APP"],
     icons=None,
     default_index=0, orientation="horizontal",)
     
