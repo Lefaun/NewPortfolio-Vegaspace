@@ -358,7 +358,7 @@ def display_menu():
         st.video("https://www.youtube.com/watch?v=s5DxZX29Rjo")
         st.title("Cartoon")
         st.write("Galeria de Criações e Desenho")
-        st.image("Drwaing.jpeg")
+        st.image("Drawing.jpeg")
         st.image("Paulo_Image.PNG")
         st.image("3.png")
     elif choice == "IoT":
